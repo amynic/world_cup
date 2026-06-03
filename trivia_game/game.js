@@ -167,6 +167,19 @@ function showResults() {
     document.getElementById('results-title').textContent = title;
     document.getElementById('results-message').textContent = message;
 
+    // Show random insight card
+    const insightCard = document.getElementById('insight-card');
+    if (typeof INSIGHTS !== 'undefined' && INSIGHTS.length > 0) {
+        const insight = INSIGHTS[Math.floor(Math.random() * INSIGHTS.length)];
+        document.getElementById('insight-title').textContent = '📊 ' + insight.title;
+        document.getElementById('insight-image').src = insight.image;
+        document.getElementById('insight-image').alt = insight.title;
+        document.getElementById('insight-text').textContent = insight.insight;
+        insightCard.classList.remove('hidden');
+    } else {
+        insightCard.classList.add('hidden');
+    }
+
     // Stats — safe DOM construction (no innerHTML)
     const statsEl = document.getElementById('results-stats');
     statsEl.replaceChildren(
