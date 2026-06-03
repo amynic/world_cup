@@ -1,4 +1,4 @@
-# FIFA World Cup Dataset (1930–2014)
+# FIFA World Cup Dataset (1930–2022)
 
 ## Source
 - **Dataset:** [FIFA World Cup - Kaggle](https://www.kaggle.com/datasets/abecklas/fifa-world-cup)
@@ -94,3 +94,63 @@ The original dataset only covered 1930–2014. Match data for 2018 and 2022 was 
 | `WorldCups_clean.csv` | 22 | 10 | 1930–2022 |
 | `WorldCupMatches_clean.csv` | 980 | 22 | 1930–2022 |
 | `WorldCupPlayers_clean.csv` | 37,784 | 13 | 1930–2014 |
+
+## Running the Analysis
+
+The analysis notebook [`world_cup_analysis.ipynb`](world_cup_analysis.ipynb) contains 10 exploratory analyses with visualisations covering tournament winners, goal trends, attendance, home advantage, top scorers, discipline, and more.
+
+### Prerequisites
+
+- Python 3.9+
+- Required packages:
+
+```bash
+pip install pandas matplotlib seaborn jupyter
+```
+
+### Option 1: VS Code (Recommended)
+
+1. Install the [Jupyter extension](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter) for VS Code
+2. Open the notebook:
+   ```bash
+   code world_cup_analysis.ipynb
+   ```
+3. Select a Python kernel (top right of the notebook)
+4. **Run All Cells** — `Ctrl+Shift+Enter` (Windows) / `Cmd+Shift+Enter` (Mac)
+
+### Option 2: Jupyter Notebook / JupyterLab
+
+```bash
+# Start Jupyter
+jupyter notebook
+
+# Or use JupyterLab
+jupyter lab
+```
+
+Then open `world_cup_analysis.ipynb` from the file browser and click **Run All** from the **Cell** menu.
+
+### Option 3: Command Line
+
+Run the notebook non-interactively and export to HTML:
+
+```bash
+jupyter nbconvert --to html --execute world_cup_analysis.ipynb
+```
+
+This generates `world_cup_analysis.html` which you can open in any browser.
+
+### What's in the Analysis
+
+| # | Section | Chart Type |
+|---|---------|------------|
+| 1 | 🏆 Tournament Winners | Horizontal bar |
+| 2 | 📈 Goals per Tournament | Dual-axis bar + line |
+| 3 | 🏟️ Attendance Trends | Area chart |
+| 4 | 🏠 Home Advantage | Pie + bar over time |
+| 5 | 🌍 Top 15 Countries (All-Time) | Stacked W/D/L bars |
+| 6 | ⚽ Top 20 Goal Scorers | Horizontal bar |
+| 7 | 🟨🟥 Cards by Tournament | Stacked bar |
+| 8 | 🎯 Goals by Match Stage | Box plot + bar |
+| 9 | 📊 1st vs 2nd Half Goals | Pie + grouped bar |
+| 10 | 🔥 Highest Scoring Matches | Horizontal bar |
