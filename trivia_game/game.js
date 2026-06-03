@@ -1,0 +1,215 @@
+// Game state
+let currentQuestions = [];
+let currentIndex = 0;
+let score = 0;
+let answered = false;
+const QUESTIONS_PER_ROUND = 10;
+
+// DOM elements
+const startScreen = document.getElementById('start-screen');
+const gameScreen = document.getElementById('game-screen');
+const resultsScreen = document.getElementById('results-screen');
+
+// Show question counts on start screen
+function updateQuestionCounts() {
+    const easy = QUESTIONS.filter(q => q.difficulty === 'easy').length;
+    const medium = QUESTIONS.filter(q => q.difficulty === 'medium').length;
+    const hard = QUESTIONS.filter(q => q.difficulty === 'hard').length;
+    document.getElementById('question-count').textContent =
+        `${QUESTIONS.length} questions available (${easy} easy, ${medium} medium, ${hard} hard)`;
+}
+updateQuestionCounts();
+
+function startGame(difficulty) {
+    let pool;
+    if (difficulty === 'all') {
+        pool = [...QUESTIONS];
+    } else {
+        pool = QUESTIONS.filter(q => q.difficulty === difficulty);
+    }
+
+    // Shuffle and pick questions for this round
+    shuffleArray(pool);
+    currentQuestions = pool.slice(0, Math.min(QUESTIONS_PER_ROUND, pool.length));
+    currentIndex = 0;
+    score = 0;
+    answered = false;
+
+    startScreen.classList.add('hidden');
+    resultsScreen.classList.add('hidden');
+    gameScreen.classList.remove('hidden');
+
+    document.getElementById('total-questions').textContent = currentQuestions.length;
+    document.getElementById('score').textContent = '0';
+
+    showQuestion();
+}
+
+function showQuestion() {
+    answered = false;
+    const q = currentQuestions[currentIndex];
+
+    // Update header
+    document.getElementById('question-number').textContent = currentIndex + 1;
+    document.getElementById('score').textContent = score;
+
+    // Progress bar
+    const progress = ((currentIndex) / currentQuestions.length) * 100;
+    document.getElementById('progress-fill').style.width = progress + '%';
+
+    // Difficulty badge
+    const badge = document.getElementById('difficulty-badge');
+    badge.textContent = q.difficulty;
+    badge.className = 'difficulty-badge ' + q.difficulty;
+
+    // Category
+    document.getElementById('category-tag').textContent = q.category;
+
+    // Question text
+    document.getElementById('question-text').textContent = q.question;
+
+    // Options
+    const optionsEl = document.getElementById('options');
+    optionsEl.innerHTML = '';
+    q.options.forEach((option, index) => {
+        const btn = document.createElement('button');
+        btn.className = 'option-btn';
+        btn.textContent = option;
+        btn.setAttribute('aria-label', `Option ${index + 1}: ${option}`);
+        btn.onclick = () => selectAnswer(btn, option, q);
+        optionsEl.appendChild(btn);
+    });
+
+    // Hide fact and next button
+    document.getElementById('fact-box').classList.add('hidden');
+    document.getElementById('next-btn').classList.add('hidden');
+}
+
+function selectAnswer(selectedBtn, selectedAnswer, question) {
+    if (answered) return;
+    answered = true;
+
+    const isCorrect = String(selectedAnswer) === String(question.answer);
+    if (isCorrect) score++;
+
+    // Mark all buttons
+    const buttons = document.querySelectorAll('.option-btn');
+    buttons.forEach(btn => {
+        btn.classList.add('disabled');
+        if (String(btn.textContent) === String(question.answer)) {
+            btn.classList.add('correct');
+        }
+    });
+
+    if (!isCorrect) {
+        selectedBtn.classList.add('wrong');
+    }
+
+    // Show fact
+    if (question.fact) {
+        document.getElementById('fact-text').textContent =
+            (isCorrect ? '✅ Correct! ' : '❌ Wrong! ') + question.fact;
+        document.getElementById('fact-box').classList.remove('hidden');
+    }
+
+    // Show next button
+    const nextBtn = document.getElementById('next-btn');
+    if (currentIndex < currentQuestions.length - 1) {
+        nextBtn.textContent = 'Next Question →';
+    } else {
+        nextBtn.textContent = 'See Results 🏆';
+    }
+    nextBtn.classList.remove('hidden');
+
+    // Update score display
+    document.getElementById('score').textContent = score;
+}
+
+function nextQuestion() {
+    currentIndex++;
+    if (currentIndex >= currentQuestions.length) {
+        showResults();
+    } else {
+        showQuestion();
+    }
+}
+
+function showResults() {
+    gameScreen.classList.add('hidden');
+    resultsScreen.classList.remove('hidden');
+
+    const total = currentQuestions.length;
+    const pct = Math.round((score / total) * 100);
+
+    document.getElementById('final-score').textContent = score;
+    document.getElementById('final-total').textContent = total;
+
+    // Emoji and title based on score
+    let emoji, title, message;
+    if (pct === 100) {
+        emoji = '🏆'; title = 'Perfect Score!';
+        message = 'You\'re a true World Cup expert!';
+    } else if (pct >= 80) {
+        emoji = '🥇'; title = 'Excellent!';
+        message = 'You really know your World Cup history!';
+    } else if (pct >= 60) {
+        emoji = '🥈'; title = 'Well Done!';
+        message = 'Solid knowledge — keep learning!';
+    } else if (pct >= 40) {
+        emoji = '🥉'; title = 'Not Bad!';
+        message = 'Room for improvement — try again?';
+    } else {
+        emoji = '📚'; title = 'Keep Learning!';
+        message = 'The beautiful game has lots to discover!';
+    }
+
+    document.getElementById('results-emoji').textContent = emoji;
+    document.getElementById('results-title').textContent = title;
+    document.getElementById('results-message').textContent = message;
+
+    // Stats
+    const statsEl = document.getElementById('results-stats');
+    statsEl.innerHTML = `
+        <div class="stat-card">
+            <span class="stat-value">${score}</span>
+            <span class="stat-label">Correct</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">${total - score}</span>
+            <span class="stat-label">Wrong</span>
+        </div>
+        <div class="stat-card">
+            <span class="stat-value">${pct}%</span>
+            <span class="stat-label">Accuracy</span>
+        </div>
+    `;
+}
+
+function showStart() {
+    resultsScreen.classList.add('hidden');
+    gameScreen.classList.add('hidden');
+    startScreen.classList.remove('hidden');
+}
+
+// Keyboard support
+document.addEventListener('keydown', (e) => {
+    if (gameScreen.classList.contains('hidden')) return;
+
+    const key = e.key;
+    if (['1', '2', '3', '4'].includes(key) && !answered) {
+        const buttons = document.querySelectorAll('.option-btn');
+        const idx = parseInt(key) - 1;
+        if (buttons[idx]) buttons[idx].click();
+    } else if (key === 'Enter' && answered) {
+        nextQuestion();
+    }
+});
+
+// Fisher-Yates shuffle
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
+}
