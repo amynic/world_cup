@@ -97,7 +97,7 @@ The original dataset only covered 1930–2014. Match data for 2018 and 2022 was 
 
 ## Running the Analysis
 
-The analysis notebook [`world_cup_analysis.ipynb`](world_cup_analysis.ipynb) contains 10 exploratory analyses with visualisations covering tournament winners, goal trends, attendance, home advantage, top scorers, discipline, and more.
+The analysis notebook [`world_cup_analysis.ipynb`](world_cup_analysis.ipynb) contains 16 exploratory analyses with visualisations covering tournament winners, goal trends, attendance, home advantage, top scorers, discipline, and more.
 
 ### Prerequisites
 
@@ -154,3 +154,9 @@ This generates `world_cup_analysis.html` which you can open in any browser.
 | 8 | 🎯 Goals by Match Stage | Box plot + bar |
 | 9 | 📊 1st vs 2nd Half Goals | Pie + grouped bar |
 | 10 | 🔥 Highest Scoring Matches | Horizontal bar |
+| 11 | 🏠🌍 Host Nation Performance | Bar + table |
+| 12 | 😲 Biggest Upsets | Horizontal bar |
+| 13 | 🎽 Most-Capped World Cup Players | Horizontal bar |
+| 14 | 🌐 Country Debut Analysis | Timeline |
+| 15 | 🔥 Head-to-Head Rivalry Heatmap | Heatmap |
+| 16 | 📏 Score Margin Distribution | Distribution |
