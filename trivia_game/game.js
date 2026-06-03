@@ -70,7 +70,7 @@ function showQuestion() {
 
     // Options
     const optionsEl = document.getElementById('options');
-    optionsEl.innerHTML = '';
+    optionsEl.replaceChildren();
     q.options.forEach((option, index) => {
         const btn = document.createElement('button');
         btn.className = 'option-btn';
@@ -167,22 +167,27 @@ function showResults() {
     document.getElementById('results-title').textContent = title;
     document.getElementById('results-message').textContent = message;
 
-    // Stats
+    // Stats — safe DOM construction (no innerHTML)
     const statsEl = document.getElementById('results-stats');
-    statsEl.innerHTML = `
-        <div class="stat-card">
-            <span class="stat-value">${score}</span>
-            <span class="stat-label">Correct</span>
-        </div>
-        <div class="stat-card">
-            <span class="stat-value">${total - score}</span>
-            <span class="stat-label">Wrong</span>
-        </div>
-        <div class="stat-card">
-            <span class="stat-value">${pct}%</span>
-            <span class="stat-label">Accuracy</span>
-        </div>
-    `;
+    statsEl.replaceChildren(
+        createStatCard(score, 'Correct'),
+        createStatCard(total - score, 'Wrong'),
+        createStatCard(`${pct}%`, 'Accuracy')
+    );
+}
+
+function createStatCard(value, label) {
+    const card = document.createElement('div');
+    card.className = 'stat-card';
+    const valSpan = document.createElement('span');
+    valSpan.className = 'stat-value';
+    valSpan.textContent = value;
+    const labSpan = document.createElement('span');
+    labSpan.className = 'stat-label';
+    labSpan.textContent = label;
+    card.appendChild(valSpan);
+    card.appendChild(labSpan);
+    return card;
 }
 
 function showStart() {
@@ -213,3 +218,12 @@ function shuffleArray(arr) {
     }
     return arr;
 }
+
+// Event listeners (no inline handlers)
+document.getElementById('btn-easy').addEventListener('click', () => startGame('easy'));
+document.getElementById('btn-medium').addEventListener('click', () => startGame('medium'));
+document.getElementById('btn-hard').addEventListener('click', () => startGame('hard'));
+document.getElementById('btn-all').addEventListener('click', () => startGame('all'));
+document.getElementById('btn-home').addEventListener('click', showStart);
+document.getElementById('next-btn').addEventListener('click', nextQuestion);
+document.getElementById('btn-play-again').addEventListener('click', showStart);

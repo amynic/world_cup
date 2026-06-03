@@ -14,10 +14,10 @@
             <p class="subtitle">Test your FIFA World Cup knowledge (1930–2022)</p>
             <div class="difficulty-select">
                 <h3>Choose Difficulty</h3>
-                <button class="btn btn-easy" onclick="startGame('easy')">Easy</button>
-                <button class="btn btn-medium" onclick="startGame('medium')">Medium</button>
-                <button class="btn btn-hard" onclick="startGame('hard')">Hard</button>
-                <button class="btn btn-all" onclick="startGame('all')">Mix It Up!</button>
+                <button class="btn btn-easy" id="btn-easy">Easy</button>
+                <button class="btn btn-medium" id="btn-medium">Medium</button>
+                <button class="btn btn-hard" id="btn-hard">Hard</button>
+                <button class="btn btn-all" id="btn-all">Mix It Up!</button>
             </div>
             <p class="question-count" id="question-count"></p>
         </div>
@@ -25,7 +25,7 @@
         <!-- GAME SCREEN -->
         <div id="game-screen" class="screen hidden">
             <div class="game-header">
-                <button class="btn-home" onclick="showStart()" title="Back to Home">🏠</button>
+                <button class="btn-home" id="btn-home" title="Back to Home">🏠</button>
                 <div class="progress">
                     <span id="question-number">1</span> / <span id="total-questions">10</span>
                 </div>
@@ -42,7 +42,7 @@
                 <div class="fact-icon">💡</div>
                 <p id="fact-text"></p>
             </div>
-            <button class="btn btn-next hidden" id="next-btn" onclick="nextQuestion()">Next Question →</button>
+            <button class="btn btn-next hidden" id="next-btn">Next Question →</button>
         </div>
 
         <!-- RESULTS SCREEN -->
@@ -55,7 +55,7 @@
             </div>
             <p id="results-message"></p>
             <div class="results-stats" id="results-stats"></div>
-            <button class="btn btn-all" onclick="showStart()">Play Again</button>
+            <button class="btn btn-all" id="btn-play-again">Play Again</button>
         </div>
     </div>
 
