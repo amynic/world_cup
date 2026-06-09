@@ -3,8 +3,8 @@ const QUESTIONS = [
     "id": "winner-1930",
     "question": "Who won the 1930 FIFA World Cup?",
     "options": [
+      "West Germany",
       "France",
-      "Spain",
       "Uruguay",
       "Italy"
     ],
@@ -18,7 +18,7 @@ const QUESTIONS = [
     "question": "Who won the 1934 FIFA World Cup?",
     "options": [
       "Uruguay",
-      "Germany",
+      "Brazil",
       "France",
       "Italy"
     ],
@@ -31,8 +31,8 @@ const QUESTIONS = [
     "id": "winner-1938",
     "question": "Who won the 1938 FIFA World Cup?",
     "options": [
-      "France",
       "Spain",
+      "Germany",
       "Italy",
       "Uruguay"
     ],
@@ -45,8 +45,8 @@ const QUESTIONS = [
     "id": "winner-1950",
     "question": "Who won the 1950 FIFA World Cup?",
     "options": [
-      "Germany",
-      "Argentina",
+      "France",
+      "England",
       "Uruguay",
       "Spain"
     ],
@@ -59,24 +59,24 @@ const QUESTIONS = [
     "id": "winner-1954",
     "question": "Who won the 1954 FIFA World Cup?",
     "options": [
-      "Germany",
+      "West Germany",
       "Uruguay",
-      "Brazil",
+      "Spain",
       "Argentina"
     ],
-    "answer": "Germany",
+    "answer": "West Germany",
     "difficulty": "easy",
     "category": "Tournament Winners",
-    "fact": "Germany won the 1954 World Cup held in Switzerland."
+    "fact": "West Germany won the 1954 World Cup held in Switzerland."
   },
   {
     "id": "winner-1958",
     "question": "Who won the 1958 FIFA World Cup?",
     "options": [
-      "Spain",
+      "West Germany",
       "Brazil",
       "Italy",
-      "Germany"
+      "France"
     ],
     "answer": "Brazil",
     "difficulty": "easy",
@@ -88,8 +88,8 @@ const QUESTIONS = [
     "question": "Who won the 1962 FIFA World Cup?",
     "options": [
       "Brazil",
-      "Spain",
       "Uruguay",
+      "Italy",
       "England"
     ],
     "answer": "Brazil",
@@ -101,9 +101,9 @@ const QUESTIONS = [
     "id": "winner-1966",
     "question": "Who won the 1966 FIFA World Cup?",
     "options": [
-      "Uruguay",
+      "France",
       "Brazil",
-      "Spain",
+      "Uruguay",
       "England"
     ],
     "answer": "England",
@@ -117,8 +117,8 @@ const QUESTIONS = [
     "options": [
       "Argentina",
       "Brazil",
-      "Spain",
-      "Germany"
+      "France",
+      "Spain"
     ],
     "answer": "Brazil",
     "difficulty": "easy",
@@ -130,22 +130,22 @@ const QUESTIONS = [
     "question": "Who won the 1974 FIFA World Cup?",
     "options": [
       "Uruguay",
-      "Germany",
-      "Spain",
-      "France"
+      "West Germany",
+      "France",
+      "Italy"
     ],
-    "answer": "Germany",
+    "answer": "West Germany",
     "difficulty": "easy",
     "category": "Tournament Winners",
-    "fact": "Germany won the 1974 World Cup held in Germany."
+    "fact": "West Germany won the 1974 World Cup held in Germany."
   },
   {
     "id": "winner-1978",
     "question": "Who won the 1978 FIFA World Cup?",
     "options": [
       "Argentina",
-      "Italy",
       "Spain",
+      "Brazil",
       "Uruguay"
     ],
     "answer": "Argentina",
@@ -157,10 +157,10 @@ const QUESTIONS = [
     "id": "winner-1982",
     "question": "Who won the 1982 FIFA World Cup?",
     "options": [
-      "Germany",
-      "Italy",
+      "Brazil",
       "France",
-      "Brazil"
+      "Italy",
+      "West Germany"
     ],
     "answer": "Italy",
     "difficulty": "easy",
@@ -171,10 +171,10 @@ const QUESTIONS = [
     "id": "winner-1986",
     "question": "Who won the 1986 FIFA World Cup?",
     "options": [
-      "Uruguay",
+      "France",
       "Argentina",
-      "Germany",
-      "France"
+      "England",
+      "Italy"
     ],
     "answer": "Argentina",
     "difficulty": "easy",
@@ -185,21 +185,21 @@ const QUESTIONS = [
     "id": "winner-1990",
     "question": "Who won the 1990 FIFA World Cup?",
     "options": [
-      "Italy",
-      "Germany",
-      "France",
+      "Brazil",
+      "West Germany",
+      "Spain",
       "England"
     ],
-    "answer": "Germany",
+    "answer": "West Germany",
     "difficulty": "easy",
     "category": "Tournament Winners",
-    "fact": "Germany won the 1990 World Cup held in Italy."
+    "fact": "West Germany won the 1990 World Cup held in Italy."
   },
   {
     "id": "winner-1994",
     "question": "Who won the 1994 FIFA World Cup?",
     "options": [
-      "Germany",
+      "Spain",
       "Uruguay",
       "Brazil",
       "France"
@@ -215,8 +215,8 @@ const QUESTIONS = [
     "options": [
       "France",
       "Uruguay",
-      "Germany",
-      "Brazil"
+      "West Germany",
+      "Spain"
     ],
     "answer": "France",
     "difficulty": "easy",
@@ -228,9 +228,9 @@ const QUESTIONS = [
     "question": "Who won the 2002 FIFA World Cup?",
     "options": [
       "Brazil",
-      "Italy",
+      "England",
       "France",
-      "England"
+      "Germany"
     ],
     "answer": "Brazil",
     "difficulty": "easy",
@@ -242,9 +242,9 @@ const QUESTIONS = [
     "question": "Who won the 2006 FIFA World Cup?",
     "options": [
       "Italy",
-      "Spain",
-      "Brazil",
-      "Germany"
+      "West Germany",
+      "Germany",
+      "Brazil"
     ],
     "answer": "Italy",
     "difficulty": "easy",
@@ -255,10 +255,10 @@ const QUESTIONS = [
     "id": "winner-2010",
     "question": "Who won the 2010 FIFA World Cup?",
     "options": [
-      "England",
+      "France",
+      "Brazil",
       "Spain",
-      "Argentina",
-      "Brazil"
+      "England"
     ],
     "answer": "Spain",
     "difficulty": "easy",
@@ -269,9 +269,9 @@ const QUESTIONS = [
     "id": "winner-2014",
     "question": "Who won the 2014 FIFA World Cup?",
     "options": [
-      "Italy",
-      "Argentina",
-      "England",
+      "Spain",
+      "Uruguay",
+      "France",
       "Germany"
     ],
     "answer": "Germany",
@@ -280,40 +280,12 @@ const QUESTIONS = [
     "fact": "Germany won the 2014 World Cup held in Brazil."
   },
   {
-    "id": "winner-2018",
-    "question": "Who won the 2018 FIFA World Cup?",
-    "options": [
-      "Italy",
-      "France",
-      "Argentina",
-      "Spain"
-    ],
-    "answer": "France",
-    "difficulty": "easy",
-    "category": "Tournament Winners",
-    "fact": "France won the 2018 World Cup held in Russia."
-  },
-  {
-    "id": "winner-2022",
-    "question": "Who won the 2022 FIFA World Cup?",
-    "options": [
-      "Argentina",
-      "Brazil",
-      "Spain",
-      "England"
-    ],
-    "answer": "Argentina",
-    "difficulty": "easy",
-    "category": "Tournament Winners",
-    "fact": "Argentina won the 2022 World Cup held in Qatar."
-  },
-  {
     "id": "host-1930",
     "question": "Which country hosted the 1930 FIFA World Cup?",
     "options": [
-      "USA",
-      "Italy",
+      "England",
       "Spain",
+      "Korea/Japan",
       "Uruguay"
     ],
     "answer": "Uruguay",
@@ -325,10 +297,10 @@ const QUESTIONS = [
     "id": "host-1934",
     "question": "Which country hosted the 1934 FIFA World Cup?",
     "options": [
-      "France",
-      "Spain",
+      "Argentina",
       "Italy",
-      "Sweden"
+      "Germany",
+      "Mexico"
     ],
     "answer": "Italy",
     "difficulty": "easy",
@@ -339,9 +311,9 @@ const QUESTIONS = [
     "id": "host-1938",
     "question": "Which country hosted the 1938 FIFA World Cup?",
     "options": [
-      "Uruguay",
       "France",
-      "Russia",
+      "Spain",
+      "Italy",
       "USA"
     ],
     "answer": "France",
@@ -353,10 +325,10 @@ const QUESTIONS = [
     "id": "host-1950",
     "question": "Which country hosted the 1950 FIFA World Cup?",
     "options": [
-      "Switzerland",
+      "Sweden",
       "Brazil",
-      "Spain",
-      "South Africa"
+      "England",
+      "Italy"
     ],
     "answer": "Brazil",
     "difficulty": "easy",
@@ -367,10 +339,10 @@ const QUESTIONS = [
     "id": "host-1954",
     "question": "Which country hosted the 1954 FIFA World Cup?",
     "options": [
-      "Korea/Japan",
+      "Sweden",
       "Switzerland",
-      "Chile",
-      "Sweden"
+      "South Africa",
+      "USA"
     ],
     "answer": "Switzerland",
     "difficulty": "easy",
@@ -381,10 +353,10 @@ const QUESTIONS = [
     "id": "host-1958",
     "question": "Which country hosted the 1958 FIFA World Cup?",
     "options": [
-      "Uruguay",
-      "Mexico",
       "Spain",
-      "Sweden"
+      "Switzerland",
+      "Sweden",
+      "South Africa"
     ],
     "answer": "Sweden",
     "difficulty": "easy",
@@ -395,9 +367,9 @@ const QUESTIONS = [
     "id": "host-1962",
     "question": "Which country hosted the 1962 FIFA World Cup?",
     "options": [
-      "Uruguay",
-      "Mexico",
-      "Brazil",
+      "Germany",
+      "Korea/Japan",
+      "France",
       "Chile"
     ],
     "answer": "Chile",
@@ -409,10 +381,10 @@ const QUESTIONS = [
     "id": "host-1966",
     "question": "Which country hosted the 1966 FIFA World Cup?",
     "options": [
-      "Korea/Japan",
-      "Germany",
+      "Italy",
       "England",
-      "France"
+      "Mexico",
+      "Uruguay"
     ],
     "answer": "England",
     "difficulty": "easy",
@@ -423,10 +395,10 @@ const QUESTIONS = [
     "id": "host-1970",
     "question": "Which country hosted the 1970 FIFA World Cup?",
     "options": [
-      "Sweden",
-      "Switzerland",
-      "Mexico",
-      "Germany"
+      "Brazil",
+      "Uruguay",
+      "Argentina",
+      "Mexico"
     ],
     "answer": "Mexico",
     "difficulty": "easy",
@@ -437,10 +409,10 @@ const QUESTIONS = [
     "id": "host-1974",
     "question": "Which country hosted the 1974 FIFA World Cup?",
     "options": [
+      "Italy",
+      "Mexico",
       "Germany",
-      "Spain",
-      "Argentina",
-      "Chile"
+      "South Africa"
     ],
     "answer": "Germany",
     "difficulty": "easy",
@@ -451,10 +423,10 @@ const QUESTIONS = [
     "id": "host-1978",
     "question": "Which country hosted the 1978 FIFA World Cup?",
     "options": [
-      "Qatar",
-      "Russia",
-      "Brazil",
-      "Argentina"
+      "Mexico",
+      "France",
+      "Argentina",
+      "Switzerland"
     ],
     "answer": "Argentina",
     "difficulty": "easy",
@@ -465,10 +437,10 @@ const QUESTIONS = [
     "id": "host-1982",
     "question": "Which country hosted the 1982 FIFA World Cup?",
     "options": [
-      "England",
-      "Germany",
-      "Brazil",
-      "Spain"
+      "Spain",
+      "Chile",
+      "USA",
+      "Switzerland"
     ],
     "answer": "Spain",
     "difficulty": "easy",
@@ -479,10 +451,10 @@ const QUESTIONS = [
     "id": "host-1986",
     "question": "Which country hosted the 1986 FIFA World Cup?",
     "options": [
-      "England",
-      "Uruguay",
-      "Mexico",
-      "Italy"
+      "Brazil",
+      "Korea/Japan",
+      "Italy",
+      "Mexico"
     ],
     "answer": "Mexico",
     "difficulty": "easy",
@@ -493,10 +465,10 @@ const QUESTIONS = [
     "id": "host-1990",
     "question": "Which country hosted the 1990 FIFA World Cup?",
     "options": [
-      "Mexico",
+      "Switzerland",
+      "Germany",
       "Italy",
-      "Spain",
-      "Germany"
+      "Argentina"
     ],
     "answer": "Italy",
     "difficulty": "easy",
@@ -507,10 +479,10 @@ const QUESTIONS = [
     "id": "host-1994",
     "question": "Which country hosted the 1994 FIFA World Cup?",
     "options": [
-      "Brazil",
+      "Uruguay",
+      "Argentina",
       "USA",
-      "Qatar",
-      "Korea/Japan"
+      "Spain"
     ],
     "answer": "USA",
     "difficulty": "easy",
@@ -522,9 +494,9 @@ const QUESTIONS = [
     "question": "Which country hosted the 1998 FIFA World Cup?",
     "options": [
       "France",
+      "Chile",
       "Italy",
-      "Switzerland",
-      "Spain"
+      "South Africa"
     ],
     "answer": "France",
     "difficulty": "easy",
@@ -535,10 +507,10 @@ const QUESTIONS = [
     "id": "host-2002",
     "question": "Which country hosted the 2002 FIFA World Cup?",
     "options": [
-      "South Africa",
-      "Qatar",
-      "England",
-      "Korea/Japan"
+      "Mexico",
+      "Brazil",
+      "Korea/Japan",
+      "France"
     ],
     "answer": "Korea/Japan",
     "difficulty": "easy",
@@ -549,10 +521,10 @@ const QUESTIONS = [
     "id": "host-2006",
     "question": "Which country hosted the 2006 FIFA World Cup?",
     "options": [
-      "Italy",
-      "USA",
-      "Germany",
-      "Chile"
+      "Chile",
+      "Korea/Japan",
+      "Brazil",
+      "Germany"
     ],
     "answer": "Germany",
     "difficulty": "easy",
@@ -563,10 +535,10 @@ const QUESTIONS = [
     "id": "host-2010",
     "question": "Which country hosted the 2010 FIFA World Cup?",
     "options": [
-      "Brazil",
-      "Chile",
+      "Sweden",
       "South Africa",
-      "Mexico"
+      "Chile",
+      "USA"
     ],
     "answer": "South Africa",
     "difficulty": "easy",
@@ -577,10 +549,10 @@ const QUESTIONS = [
     "id": "host-2014",
     "question": "Which country hosted the 2014 FIFA World Cup?",
     "options": [
-      "Sweden",
-      "Mexico",
-      "Brazil",
-      "Chile"
+      "South Africa",
+      "Spain",
+      "Korea/Japan",
+      "Brazil"
     ],
     "answer": "Brazil",
     "difficulty": "easy",
@@ -588,41 +560,13 @@ const QUESTIONS = [
     "fact": "The 2014 World Cup was hosted by Brazil."
   },
   {
-    "id": "host-2018",
-    "question": "Which country hosted the 2018 FIFA World Cup?",
-    "options": [
-      "Brazil",
-      "Uruguay",
-      "Argentina",
-      "Russia"
-    ],
-    "answer": "Russia",
-    "difficulty": "easy",
-    "category": "Host Countries",
-    "fact": "The 2018 World Cup was hosted by Russia."
-  },
-  {
-    "id": "host-2022",
-    "question": "Which country hosted the 2022 FIFA World Cup?",
-    "options": [
-      "Chile",
-      "Sweden",
-      "Qatar",
-      "England"
-    ],
-    "answer": "Qatar",
-    "difficulty": "easy",
-    "category": "Host Countries",
-    "fact": "The 2022 World Cup was hosted by Qatar."
-  },
-  {
     "id": "runner-up-1930",
     "question": "Who was the runner-up in the 1930 FIFA World Cup?",
     "options": [
-      "Sweden",
-      "Brazil",
-      "Czechoslovakia",
-      "Argentina"
+      "Hungary",
+      "Germany",
+      "Argentina",
+      "Italy"
     ],
     "answer": "Argentina",
     "difficulty": "easy",
@@ -633,10 +577,10 @@ const QUESTIONS = [
     "id": "runner-up-1934",
     "question": "Who was the runner-up in the 1934 FIFA World Cup?",
     "options": [
-      "France",
-      "Germany",
+      "Hungary",
       "Czechoslovakia",
-      "Sweden"
+      "Brazil",
+      "Netherlands"
     ],
     "answer": "Czechoslovakia",
     "difficulty": "easy",
@@ -647,9 +591,9 @@ const QUESTIONS = [
     "id": "runner-up-1938",
     "question": "Who was the runner-up in the 1938 FIFA World Cup?",
     "options": [
-      "Argentina",
+      "Czechoslovakia",
       "Germany",
-      "Sweden",
+      "Netherlands",
       "Hungary"
     ],
     "answer": "Hungary",
@@ -661,10 +605,10 @@ const QUESTIONS = [
     "id": "runner-up-1950",
     "question": "Who was the runner-up in the 1950 FIFA World Cup?",
     "options": [
-      "Argentina",
       "Brazil",
-      "Croatia",
-      "Germany"
+      "Sweden",
+      "Czechoslovakia",
+      "France"
     ],
     "answer": "Brazil",
     "difficulty": "easy",
@@ -676,23 +620,23 @@ const QUESTIONS = [
     "question": "Who was the runner-up in the 1954 FIFA World Cup?",
     "options": [
       "Netherlands",
-      "Czechoslovakia",
       "Hungary",
-      "Argentina"
+      "Argentina",
+      "Sweden"
     ],
     "answer": "Hungary",
     "difficulty": "easy",
     "category": "Tournament Results",
-    "fact": "Hungary lost the 1954 final to Germany."
+    "fact": "Hungary lost the 1954 final to West Germany."
   },
   {
     "id": "runner-up-1958",
     "question": "Who was the runner-up in the 1958 FIFA World Cup?",
     "options": [
-      "Argentina",
       "Sweden",
+      "West Germany",
       "Netherlands",
-      "Brazil"
+      "France"
     ],
     "answer": "Sweden",
     "difficulty": "easy",
@@ -703,10 +647,10 @@ const QUESTIONS = [
     "id": "runner-up-1962",
     "question": "Who was the runner-up in the 1962 FIFA World Cup?",
     "options": [
-      "Italy",
+      "Germany",
       "Czechoslovakia",
       "Hungary",
-      "Netherlands"
+      "France"
     ],
     "answer": "Czechoslovakia",
     "difficulty": "easy",
@@ -717,23 +661,23 @@ const QUESTIONS = [
     "id": "runner-up-1966",
     "question": "Who was the runner-up in the 1966 FIFA World Cup?",
     "options": [
-      "Brazil",
+      "Argentina",
       "Italy",
-      "Germany",
-      "Hungary"
+      "West Germany",
+      "France"
     ],
-    "answer": "Germany",
+    "answer": "West Germany",
     "difficulty": "easy",
     "category": "Tournament Results",
-    "fact": "Germany lost the 1966 final to England."
+    "fact": "West Germany lost the 1966 final to England."
   },
   {
     "id": "runner-up-1970",
     "question": "Who was the runner-up in the 1970 FIFA World Cup?",
     "options": [
       "Germany",
-      "France",
-      "Netherlands",
+      "Hungary",
+      "Argentina",
       "Italy"
     ],
     "answer": "Italy",
@@ -745,24 +689,24 @@ const QUESTIONS = [
     "id": "runner-up-1974",
     "question": "Who was the runner-up in the 1974 FIFA World Cup?",
     "options": [
-      "Netherlands",
-      "Sweden",
-      "Croatia",
-      "Czechoslovakia"
+      "Czechoslovakia",
+      "Germany",
+      "Brazil",
+      "Netherlands"
     ],
     "answer": "Netherlands",
     "difficulty": "easy",
     "category": "Tournament Results",
-    "fact": "Netherlands lost the 1974 final to Germany."
+    "fact": "Netherlands lost the 1974 final to West Germany."
   },
   {
     "id": "runner-up-1978",
     "question": "Who was the runner-up in the 1978 FIFA World Cup?",
     "options": [
+      "Brazil",
       "Netherlands",
-      "Germany",
       "Argentina",
-      "Hungary"
+      "Czechoslovakia"
     ],
     "answer": "Netherlands",
     "difficulty": "easy",
@@ -773,52 +717,52 @@ const QUESTIONS = [
     "id": "runner-up-1982",
     "question": "Who was the runner-up in the 1982 FIFA World Cup?",
     "options": [
-      "Hungary",
-      "Germany",
-      "Netherlands",
-      "France"
+      "Brazil",
+      "Italy",
+      "West Germany",
+      "Hungary"
     ],
-    "answer": "Germany",
+    "answer": "West Germany",
     "difficulty": "easy",
     "category": "Tournament Results",
-    "fact": "Germany lost the 1982 final to Italy."
+    "fact": "West Germany lost the 1982 final to Italy."
   },
   {
     "id": "runner-up-1986",
     "question": "Who was the runner-up in the 1986 FIFA World Cup?",
     "options": [
-      "Sweden",
-      "Croatia",
       "Italy",
-      "Germany"
+      "Germany",
+      "Netherlands",
+      "West Germany"
     ],
-    "answer": "Germany",
+    "answer": "West Germany",
     "difficulty": "easy",
     "category": "Tournament Results",
-    "fact": "Germany lost the 1986 final to Argentina."
+    "fact": "West Germany lost the 1986 final to Argentina."
   },
   {
     "id": "runner-up-1990",
     "question": "Who was the runner-up in the 1990 FIFA World Cup?",
     "options": [
       "Argentina",
-      "Croatia",
-      "Italy",
+      "West Germany",
+      "France",
       "Hungary"
     ],
     "answer": "Argentina",
     "difficulty": "easy",
     "category": "Tournament Results",
-    "fact": "Argentina lost the 1990 final to Germany."
+    "fact": "Argentina lost the 1990 final to West Germany."
   },
   {
     "id": "runner-up-1994",
     "question": "Who was the runner-up in the 1994 FIFA World Cup?",
     "options": [
       "Italy",
-      "Brazil",
-      "Czechoslovakia",
-      "Germany"
+      "West Germany",
+      "Argentina",
+      "Hungary"
     ],
     "answer": "Italy",
     "difficulty": "easy",
@@ -829,10 +773,10 @@ const QUESTIONS = [
     "id": "runner-up-1998",
     "question": "Who was the runner-up in the 1998 FIFA World Cup?",
     "options": [
-      "Argentina",
+      "Hungary",
       "Brazil",
-      "Germany",
-      "France"
+      "Netherlands",
+      "Germany"
     ],
     "answer": "Brazil",
     "difficulty": "easy",
@@ -843,10 +787,10 @@ const QUESTIONS = [
     "id": "runner-up-2002",
     "question": "Who was the runner-up in the 2002 FIFA World Cup?",
     "options": [
-      "Germany",
-      "Netherlands",
-      "Italy",
-      "Argentina"
+      "Sweden",
+      "France",
+      "West Germany",
+      "Germany"
     ],
     "answer": "Germany",
     "difficulty": "easy",
@@ -857,10 +801,10 @@ const QUESTIONS = [
     "id": "runner-up-2006",
     "question": "Who was the runner-up in the 2006 FIFA World Cup?",
     "options": [
-      "Hungary",
       "France",
-      "Netherlands",
-      "Sweden"
+      "Germany",
+      "West Germany",
+      "Czechoslovakia"
     ],
     "answer": "France",
     "difficulty": "easy",
@@ -871,10 +815,10 @@ const QUESTIONS = [
     "id": "runner-up-2010",
     "question": "Who was the runner-up in the 2010 FIFA World Cup?",
     "options": [
-      "Germany",
       "Netherlands",
-      "Croatia",
-      "Czechoslovakia"
+      "Brazil",
+      "Czechoslovakia",
+      "West Germany"
     ],
     "answer": "Netherlands",
     "difficulty": "easy",
@@ -885,10 +829,10 @@ const QUESTIONS = [
     "id": "runner-up-2014",
     "question": "Who was the runner-up in the 2014 FIFA World Cup?",
     "options": [
-      "Brazil",
-      "Sweden",
+      "Czechoslovakia",
       "Argentina",
-      "Italy"
+      "West Germany",
+      "Germany"
     ],
     "answer": "Argentina",
     "difficulty": "easy",
@@ -896,41 +840,13 @@ const QUESTIONS = [
     "fact": "Argentina lost the 2014 final to Germany."
   },
   {
-    "id": "runner-up-2018",
-    "question": "Who was the runner-up in the 2018 FIFA World Cup?",
-    "options": [
-      "Hungary",
-      "Croatia",
-      "Argentina",
-      "Germany"
-    ],
-    "answer": "Croatia",
-    "difficulty": "easy",
-    "category": "Tournament Results",
-    "fact": "Croatia lost the 2018 final to France."
-  },
-  {
-    "id": "runner-up-2022",
-    "question": "Who was the runner-up in the 2022 FIFA World Cup?",
-    "options": [
-      "Czechoslovakia",
-      "France",
-      "Germany",
-      "Italy"
-    ],
-    "answer": "France",
-    "difficulty": "easy",
-    "category": "Tournament Results",
-    "fact": "France lost the 2022 final to Argentina."
-  },
-  {
     "id": "goals-total-1930",
     "question": "How many goals were scored in the 1930 World Cup?",
     "options": [
-      102,
-      95,
       70,
-      169
+      171,
+      95,
+      84
     ],
     "answer": 70,
     "difficulty": "medium",
@@ -941,10 +857,10 @@ const QUESTIONS = [
     "id": "goals-total-1934",
     "question": "How many goals were scored in the 1934 World Cup?",
     "options": [
-      115,
-      102,
+      95,
       70,
-      161
+      141,
+      102
     ],
     "answer": 70,
     "difficulty": "medium",
@@ -955,10 +871,10 @@ const QUESTIONS = [
     "id": "goals-total-1938",
     "question": "How many goals were scored in the 1938 World Cup?",
     "options": [
-      88,
-      145,
+      141,
       84,
-      171
+      88,
+      126
     ],
     "answer": 84,
     "difficulty": "medium",
@@ -969,9 +885,9 @@ const QUESTIONS = [
     "id": "goals-total-1950",
     "question": "How many goals were scored in the 1950 World Cup?",
     "options": [
-      102,
       132,
       88,
+      146,
       141
     ],
     "answer": 88,
@@ -983,9 +899,9 @@ const QUESTIONS = [
     "id": "goals-total-1954",
     "question": "How many goals were scored in the 1954 World Cup?",
     "options": [
-      146,
-      115,
-      171,
+      89,
+      95,
+      84,
       140
     ],
     "answer": 140,
@@ -997,10 +913,10 @@ const QUESTIONS = [
     "id": "goals-total-1958",
     "question": "How many goals were scored in the 1958 World Cup?",
     "options": [
-      171,
-      169,
-      115,
-      126
+      126,
+      102,
+      84,
+      115
     ],
     "answer": 126,
     "difficulty": "medium",
@@ -1011,10 +927,10 @@ const QUESTIONS = [
     "id": "goals-total-1962",
     "question": "How many goals were scored in the 1962 World Cup?",
     "options": [
-      84,
-      95,
-      146,
-      89
+      147,
+      140,
+      89,
+      126
     ],
     "answer": 89,
     "difficulty": "medium",
@@ -1025,10 +941,10 @@ const QUESTIONS = [
     "id": "goals-total-1966",
     "question": "How many goals were scored in the 1966 World Cup?",
     "options": [
-      115,
-      161,
       141,
-      89
+      89,
+      70,
+      88
     ],
     "answer": 89,
     "difficulty": "medium",
@@ -1039,9 +955,9 @@ const QUESTIONS = [
     "id": "goals-total-1970",
     "question": "How many goals were scored in the 1970 World Cup?",
     "options": [
+      88,
+      171,
       146,
-      161,
-      84,
       95
     ],
     "answer": 95,
@@ -1054,9 +970,9 @@ const QUESTIONS = [
     "question": "How many goals were scored in the 1974 World Cup?",
     "options": [
       97,
-      141,
-      88,
-      161
+      140,
+      145,
+      147
     ],
     "answer": 97,
     "difficulty": "medium",
@@ -1068,9 +984,9 @@ const QUESTIONS = [
     "question": "How many goals were scored in the 1978 World Cup?",
     "options": [
       102,
-      132,
       140,
-      169
+      70,
+      97
     ],
     "answer": 102,
     "difficulty": "medium",
@@ -1082,9 +998,9 @@ const QUESTIONS = [
     "question": "How many goals were scored in the 1982 World Cup?",
     "options": [
       146,
-      132,
-      126,
-      95
+      84,
+      102,
+      161
     ],
     "answer": 146,
     "difficulty": "medium",
@@ -1095,10 +1011,10 @@ const QUESTIONS = [
     "id": "goals-total-1986",
     "question": "How many goals were scored in the 1986 World Cup?",
     "options": [
-      171,
-      146,
-      89,
-      132
+      84,
+      115,
+      132,
+      70
     ],
     "answer": 132,
     "difficulty": "medium",
@@ -1110,9 +1026,9 @@ const QUESTIONS = [
     "question": "How many goals were scored in the 1990 World Cup?",
     "options": [
       115,
-      161,
-      95,
-      132
+      145,
+      84,
+      146
     ],
     "answer": 115,
     "difficulty": "medium",
@@ -1123,10 +1039,10 @@ const QUESTIONS = [
     "id": "goals-total-1994",
     "question": "How many goals were scored in the 1994 World Cup?",
     "options": [
-      145,
-      141,
-      169,
-      95
+      146,
+      102,
+      161,
+      141
     ],
     "answer": 141,
     "difficulty": "medium",
@@ -1137,10 +1053,10 @@ const QUESTIONS = [
     "id": "goals-total-1998",
     "question": "How many goals were scored in the 1998 World Cup?",
     "options": [
-      169,
-      146,
-      132,
-      171
+      102,
+      70,
+      171,
+      115
     ],
     "answer": 171,
     "difficulty": "medium",
@@ -1151,10 +1067,10 @@ const QUESTIONS = [
     "id": "goals-total-2002",
     "question": "How many goals were scored in the 2002 World Cup?",
     "options": [
-      97,
-      95,
-      126,
-      161
+      161,
+      115,
+      84,
+      95
     ],
     "answer": 161,
     "difficulty": "medium",
@@ -1165,10 +1081,10 @@ const QUESTIONS = [
     "id": "goals-total-2006",
     "question": "How many goals were scored in the 2006 World Cup?",
     "options": [
-      145,
       147,
-      88,
-      161
+      140,
+      126,
+      115
     ],
     "answer": 147,
     "difficulty": "medium",
@@ -1179,10 +1095,10 @@ const QUESTIONS = [
     "id": "goals-total-2010",
     "question": "How many goals were scored in the 2010 World Cup?",
     "options": [
-      172,
-      147,
+      132,
       145,
-      141
+      115,
+      95
     ],
     "answer": 145,
     "difficulty": "medium",
@@ -1193,10 +1109,10 @@ const QUESTIONS = [
     "id": "goals-total-2014",
     "question": "How many goals were scored in the 2014 World Cup?",
     "options": [
+      95,
       171,
-      97,
-      161,
-      140
+      145,
+      132
     ],
     "answer": 171,
     "difficulty": "medium",
@@ -1204,41 +1120,13 @@ const QUESTIONS = [
     "fact": "171 goals were scored across 64 matches in 2014."
   },
   {
-    "id": "goals-total-2018",
-    "question": "How many goals were scored in the 2018 World Cup?",
-    "options": [
-      97,
-      84,
-      169,
-      140
-    ],
-    "answer": 169,
-    "difficulty": "medium",
-    "category": "Goal Stats",
-    "fact": "169 goals were scored across 64 matches in 2018."
-  },
-  {
-    "id": "goals-total-2022",
-    "question": "How many goals were scored in the 2022 World Cup?",
-    "options": [
-      172,
-      145,
-      132,
-      161
-    ],
-    "answer": 172,
-    "difficulty": "medium",
-    "category": "Goal Stats",
-    "fact": "172 goals were scored across 64 matches in 2022."
-  },
-  {
     "id": "teams-1930",
     "question": "How many teams qualified for the 1930 World Cup?",
     "options": [
-      24,
+      16,
       13,
-      15,
-      32
+      24,
+      15
     ],
     "answer": 13,
     "difficulty": "medium",
@@ -1250,9 +1138,9 @@ const QUESTIONS = [
     "question": "How many teams qualified for the 1934 World Cup?",
     "options": [
       16,
+      24,
       32,
-      15,
-      24
+      15
     ],
     "answer": 16,
     "difficulty": "medium",
@@ -1263,10 +1151,10 @@ const QUESTIONS = [
     "id": "teams-1938",
     "question": "How many teams qualified for the 1938 World Cup?",
     "options": [
+      32,
       15,
       24,
-      16,
-      13
+      16
     ],
     "answer": 15,
     "difficulty": "medium",
@@ -1277,10 +1165,10 @@ const QUESTIONS = [
     "id": "teams-1950",
     "question": "How many teams qualified for the 1950 World Cup?",
     "options": [
-      16,
       32,
-      13,
-      24
+      24,
+      15,
+      13
     ],
     "answer": 13,
     "difficulty": "medium",
@@ -1291,10 +1179,10 @@ const QUESTIONS = [
     "id": "teams-1954",
     "question": "How many teams qualified for the 1954 World Cup?",
     "options": [
-      24,
+      15,
       13,
-      16,
-      32
+      24,
+      16
     ],
     "answer": 16,
     "difficulty": "medium",
@@ -1305,10 +1193,10 @@ const QUESTIONS = [
     "id": "teams-1958",
     "question": "How many teams qualified for the 1958 World Cup?",
     "options": [
-      32,
-      15,
+      24,
       16,
-      24
+      32,
+      13
     ],
     "answer": 16,
     "difficulty": "medium",
@@ -1319,10 +1207,10 @@ const QUESTIONS = [
     "id": "teams-1962",
     "question": "How many teams qualified for the 1962 World Cup?",
     "options": [
+      24,
       15,
       16,
-      32,
-      13
+      32
     ],
     "answer": 16,
     "difficulty": "medium",
@@ -1333,10 +1221,10 @@ const QUESTIONS = [
     "id": "teams-1966",
     "question": "How many teams qualified for the 1966 World Cup?",
     "options": [
-      24,
       16,
+      32,
       15,
-      32
+      13
     ],
     "answer": 16,
     "difficulty": "medium",
@@ -1347,10 +1235,10 @@ const QUESTIONS = [
     "id": "teams-1970",
     "question": "How many teams qualified for the 1970 World Cup?",
     "options": [
-      13,
-      16,
+      24,
       32,
-      15
+      13,
+      16
     ],
     "answer": 16,
     "difficulty": "medium",
@@ -1361,10 +1249,10 @@ const QUESTIONS = [
     "id": "teams-1974",
     "question": "How many teams qualified for the 1974 World Cup?",
     "options": [
-      15,
       16,
+      32,
       24,
-      32
+      15
     ],
     "answer": 16,
     "difficulty": "medium",
@@ -1375,10 +1263,10 @@ const QUESTIONS = [
     "id": "teams-1978",
     "question": "How many teams qualified for the 1978 World Cup?",
     "options": [
-      32,
       13,
-      15,
-      16
+      16,
+      32,
+      15
     ],
     "answer": 16,
     "difficulty": "medium",
@@ -1389,10 +1277,10 @@ const QUESTIONS = [
     "id": "teams-1982",
     "question": "How many teams qualified for the 1982 World Cup?",
     "options": [
-      13,
+      24,
       32,
       16,
-      24
+      15
     ],
     "answer": 24,
     "difficulty": "medium",
@@ -1404,8 +1292,8 @@ const QUESTIONS = [
     "question": "How many teams qualified for the 1986 World Cup?",
     "options": [
       24,
-      16,
       15,
+      16,
       13
     ],
     "answer": 24,
@@ -1417,10 +1305,10 @@ const QUESTIONS = [
     "id": "teams-1990",
     "question": "How many teams qualified for the 1990 World Cup?",
     "options": [
-      16,
+      13,
       32,
-      15,
-      24
+      24,
+      15
     ],
     "answer": 24,
     "difficulty": "medium",
@@ -1431,10 +1319,10 @@ const QUESTIONS = [
     "id": "teams-1994",
     "question": "How many teams qualified for the 1994 World Cup?",
     "options": [
+      15,
       13,
-      32,
-      16,
-      24
+      24,
+      32
     ],
     "answer": 24,
     "difficulty": "medium",
@@ -1445,10 +1333,10 @@ const QUESTIONS = [
     "id": "teams-1998",
     "question": "How many teams qualified for the 1998 World Cup?",
     "options": [
-      13,
-      15,
       24,
-      32
+      16,
+      32,
+      15
     ],
     "answer": 32,
     "difficulty": "medium",
@@ -1460,9 +1348,9 @@ const QUESTIONS = [
     "question": "How many teams qualified for the 2002 World Cup?",
     "options": [
       16,
+      32,
       24,
-      13,
-      32
+      13
     ],
     "answer": 32,
     "difficulty": "medium",
@@ -1473,10 +1361,10 @@ const QUESTIONS = [
     "id": "teams-2006",
     "question": "How many teams qualified for the 2006 World Cup?",
     "options": [
-      24,
-      16,
+      15,
       32,
-      15
+      16,
+      24
     ],
     "answer": 32,
     "difficulty": "medium",
@@ -1488,9 +1376,9 @@ const QUESTIONS = [
     "question": "How many teams qualified for the 2010 World Cup?",
     "options": [
       13,
+      32,
       24,
-      16,
-      32
+      16
     ],
     "answer": 32,
     "difficulty": "medium",
@@ -1501,10 +1389,10 @@ const QUESTIONS = [
     "id": "teams-2014",
     "question": "How many teams qualified for the 2014 World Cup?",
     "options": [
-      24,
-      13,
+      16,
+      32,
       15,
-      32
+      24
     ],
     "answer": 32,
     "difficulty": "medium",
@@ -1512,41 +1400,13 @@ const QUESTIONS = [
     "fact": "32 teams competed in the 2014 World Cup in Brazil."
   },
   {
-    "id": "teams-2018",
-    "question": "How many teams qualified for the 2018 World Cup?",
-    "options": [
-      13,
-      16,
-      15,
-      32
-    ],
-    "answer": 32,
-    "difficulty": "medium",
-    "category": "Tournament Facts",
-    "fact": "32 teams competed in the 2018 World Cup in Russia."
-  },
-  {
-    "id": "teams-2022",
-    "question": "How many teams qualified for the 2022 World Cup?",
-    "options": [
-      16,
-      15,
-      32,
-      24
-    ],
-    "answer": 32,
-    "difficulty": "medium",
-    "category": "Tournament Facts",
-    "fact": "32 teams competed in the 2022 World Cup in Qatar."
-  },
-  {
     "id": "third-1930",
     "question": "Which team finished third in the 1930 World Cup?",
     "options": [
+      "Italy",
+      "USA",
       "Poland",
-      "Portugal",
-      "Germany",
-      "USA"
+      "Germany"
     ],
     "answer": "USA",
     "difficulty": "medium",
@@ -1557,10 +1417,10 @@ const QUESTIONS = [
     "id": "third-1934",
     "question": "Which team finished third in the 1934 World Cup?",
     "options": [
-      "Poland",
-      "Turkey",
+      "Croatia",
       "Germany",
-      "Sweden"
+      "Portugal",
+      "Brazil"
     ],
     "answer": "Germany",
     "difficulty": "medium",
@@ -1571,10 +1431,10 @@ const QUESTIONS = [
     "id": "third-1938",
     "question": "Which team finished third in the 1938 World Cup?",
     "options": [
+      "Portugal",
+      "USA",
       "Brazil",
-      "Italy",
-      "Croatia",
-      "Poland"
+      "France"
     ],
     "answer": "Brazil",
     "difficulty": "medium",
@@ -1585,10 +1445,10 @@ const QUESTIONS = [
     "id": "third-1950",
     "question": "Which team finished third in the 1950 World Cup?",
     "options": [
-      "Germany",
       "Sweden",
+      "Portugal",
       "Chile",
-      "Austria"
+      "Netherlands"
     ],
     "answer": "Sweden",
     "difficulty": "medium",
@@ -1599,10 +1459,10 @@ const QUESTIONS = [
     "id": "third-1954",
     "question": "Which team finished third in the 1954 World Cup?",
     "options": [
-      "Poland",
-      "Austria",
-      "Belgium",
-      "Croatia"
+      "West Germany",
+      "USA",
+      "Germany",
+      "Austria"
     ],
     "answer": "Austria",
     "difficulty": "medium",
@@ -1613,24 +1473,24 @@ const QUESTIONS = [
     "id": "third-1958",
     "question": "Which team finished third in the 1958 World Cup?",
     "options": [
-      "Chile",
-      "Poland",
-      "France",
-      "Brazil"
+      "Croatia",
+      "Germany",
+      "Netherlands",
+      "France"
     ],
     "answer": "France",
     "difficulty": "medium",
     "category": "Tournament Results",
-    "fact": "France took third place in 1958, beating Germany in the play-off."
+    "fact": "France took third place in 1958, beating West Germany in the play-off."
   },
   {
     "id": "third-1962",
     "question": "Which team finished third in the 1962 World Cup?",
     "options": [
+      "Italy",
+      "USA",
       "Chile",
-      "Belgium",
-      "France",
-      "Austria"
+      "Sweden"
     ],
     "answer": "Chile",
     "difficulty": "medium",
@@ -1641,10 +1501,10 @@ const QUESTIONS = [
     "id": "third-1966",
     "question": "Which team finished third in the 1966 World Cup?",
     "options": [
-      "Belgium",
-      "USA",
       "Portugal",
-      "Italy"
+      "Croatia",
+      "Germany",
+      "West Germany"
     ],
     "answer": "Portugal",
     "difficulty": "medium",
@@ -1655,24 +1515,24 @@ const QUESTIONS = [
     "id": "third-1970",
     "question": "Which team finished third in the 1970 World Cup?",
     "options": [
-      "Germany",
-      "Poland",
-      "Portugal",
-      "Netherlands"
+      "France",
+      "Netherlands",
+      "Brazil",
+      "West Germany"
     ],
-    "answer": "Germany",
+    "answer": "West Germany",
     "difficulty": "medium",
     "category": "Tournament Results",
-    "fact": "Germany took third place in 1970, beating Uruguay in the play-off."
+    "fact": "West Germany took third place in 1970, beating Uruguay in the play-off."
   },
   {
     "id": "third-1974",
     "question": "Which team finished third in the 1974 World Cup?",
     "options": [
-      "Turkey",
-      "Netherlands",
       "Poland",
-      "Portugal"
+      "Germany",
+      "USA",
+      "Italy"
     ],
     "answer": "Poland",
     "difficulty": "medium",
@@ -1683,10 +1543,10 @@ const QUESTIONS = [
     "id": "third-1978",
     "question": "Which team finished third in the 1978 World Cup?",
     "options": [
-      "Brazil",
-      "Austria",
       "Portugal",
-      "France"
+      "Austria",
+      "Turkey",
+      "Brazil"
     ],
     "answer": "Brazil",
     "difficulty": "medium",
@@ -1697,10 +1557,10 @@ const QUESTIONS = [
     "id": "third-1982",
     "question": "Which team finished third in the 1982 World Cup?",
     "options": [
-      "Poland",
-      "Netherlands",
-      "Portugal",
-      "Italy"
+      "Germany",
+      "Austria",
+      "Turkey",
+      "Poland"
     ],
     "answer": "Poland",
     "difficulty": "medium",
@@ -1711,10 +1571,10 @@ const QUESTIONS = [
     "id": "third-1986",
     "question": "Which team finished third in the 1986 World Cup?",
     "options": [
-      "France",
-      "Poland",
+      "Portugal",
       "Chile",
-      "Netherlands"
+      "France",
+      "Poland"
     ],
     "answer": "France",
     "difficulty": "medium",
@@ -1725,10 +1585,10 @@ const QUESTIONS = [
     "id": "third-1990",
     "question": "Which team finished third in the 1990 World Cup?",
     "options": [
-      "Sweden",
-      "Belgium",
-      "Italy",
-      "Germany"
+      "Portugal",
+      "Chile",
+      "USA",
+      "Italy"
     ],
     "answer": "Italy",
     "difficulty": "medium",
@@ -1739,10 +1599,10 @@ const QUESTIONS = [
     "id": "third-1994",
     "question": "Which team finished third in the 1994 World Cup?",
     "options": [
+      "West Germany",
+      "Croatia",
       "Sweden",
-      "Austria",
-      "Poland",
-      "Belgium"
+      "Brazil"
     ],
     "answer": "Sweden",
     "difficulty": "medium",
@@ -1753,10 +1613,10 @@ const QUESTIONS = [
     "id": "third-1998",
     "question": "Which team finished third in the 1998 World Cup?",
     "options": [
-      "Sweden",
       "Croatia",
-      "Austria",
-      "Germany"
+      "West Germany",
+      "Poland",
+      "Portugal"
     ],
     "answer": "Croatia",
     "difficulty": "medium",
@@ -1767,10 +1627,10 @@ const QUESTIONS = [
     "id": "third-2002",
     "question": "Which team finished third in the 2002 World Cup?",
     "options": [
-      "USA",
+      "Germany",
       "Turkey",
-      "Poland",
-      "Austria"
+      "France",
+      "Sweden"
     ],
     "answer": "Turkey",
     "difficulty": "medium",
@@ -1781,10 +1641,10 @@ const QUESTIONS = [
     "id": "third-2006",
     "question": "Which team finished third in the 2006 World Cup?",
     "options": [
+      "West Germany",
       "Germany",
-      "France",
-      "Italy",
-      "USA"
+      "Netherlands",
+      "Italy"
     ],
     "answer": "Germany",
     "difficulty": "medium",
@@ -1795,10 +1655,10 @@ const QUESTIONS = [
     "id": "third-2010",
     "question": "Which team finished third in the 2010 World Cup?",
     "options": [
+      "Chile",
+      "West Germany",
       "Germany",
-      "Croatia",
-      "Brazil",
-      "USA"
+      "Sweden"
     ],
     "answer": "Germany",
     "difficulty": "medium",
@@ -1809,10 +1669,10 @@ const QUESTIONS = [
     "id": "third-2014",
     "question": "Which team finished third in the 2014 World Cup?",
     "options": [
-      "Brazil",
+      "Netherlands",
+      "Turkey",
       "France",
-      "Portugal",
-      "Netherlands"
+      "Austria"
     ],
     "answer": "Netherlands",
     "difficulty": "medium",
@@ -1820,41 +1680,13 @@ const QUESTIONS = [
     "fact": "Netherlands took third place in 2014, beating Brazil in the play-off."
   },
   {
-    "id": "third-2018",
-    "question": "Which team finished third in the 2018 World Cup?",
-    "options": [
-      "Germany",
-      "Netherlands",
-      "Belgium",
-      "Chile"
-    ],
-    "answer": "Belgium",
-    "difficulty": "medium",
-    "category": "Tournament Results",
-    "fact": "Belgium took third place in 2018, beating England in the play-off."
-  },
-  {
-    "id": "third-2022",
-    "question": "Which team finished third in the 2022 World Cup?",
-    "options": [
-      "Brazil",
-      "Italy",
-      "Croatia",
-      "Belgium"
-    ],
-    "answer": "Croatia",
-    "difficulty": "medium",
-    "category": "Tournament Results",
-    "fact": "Croatia took third place in 2022, beating Morocco in the play-off."
-  },
-  {
     "id": "final-score-1930",
     "question": "What was the score in the 1930 World Cup Final (Uruguay vs Argentina)?",
     "options": [
+      "5-2",
+      "0-0",
       "4-2",
-      "0-2",
-      "2-1",
-      "3-2"
+      "0-3"
     ],
     "answer": "4-2",
     "difficulty": "medium",
@@ -1865,10 +1697,10 @@ const QUESTIONS = [
     "id": "final-score-1934",
     "question": "What was the score in the 1934 World Cup Final (Italy vs Czechoslovakia)?",
     "options": [
-      "1-2",
       "2-1",
-      "0-2",
-      "3-1"
+      "0-3",
+      "1-0",
+      "4-2"
     ],
     "answer": "2-1",
     "difficulty": "medium",
@@ -1879,10 +1711,10 @@ const QUESTIONS = [
     "id": "final-score-1938",
     "question": "What was the score in the 1938 World Cup Final (Italy vs Hungary)?",
     "options": [
-      "3-2",
-      "4-2",
-      "3-1",
-      "1-0"
+      "1-0",
+      "0-2",
+      "5-2",
+      "4-2"
     ],
     "answer": "4-2",
     "difficulty": "medium",
@@ -1891,26 +1723,26 @@ const QUESTIONS = [
   },
   {
     "id": "final-score-1954",
-    "question": "What was the score in the 1954 World Cup Final (Germany vs Hungary)?",
+    "question": "What was the score in the 1954 World Cup Final (West Germany vs Hungary)?",
     "options": [
-      "0-3",
+      "3-2",
       "3-1",
-      "1-2",
-      "3-2"
+      "4-2",
+      "1-2"
     ],
     "answer": "3-2",
     "difficulty": "medium",
     "category": "Finals",
-    "fact": "The 1954 final ended Germany 3 - 2 Hungary."
+    "fact": "The 1954 final ended West Germany 3 - 2 Hungary."
   },
   {
     "id": "final-score-1958",
     "question": "What was the score in the 1958 World Cup Final (Brazil vs Sweden)?",
     "options": [
-      "1-1",
       "5-2",
       "0-2",
-      "1-0"
+      "1-0",
+      "0-3"
     ],
     "answer": "5-2",
     "difficulty": "medium",
@@ -1921,10 +1753,10 @@ const QUESTIONS = [
     "id": "final-score-1962",
     "question": "What was the score in the 1962 World Cup Final (Brazil vs Czechoslovakia)?",
     "options": [
-      "0-3",
-      "0-0",
+      "4-1",
       "3-1",
-      "4-1"
+      "1-2",
+      "0-3"
     ],
     "answer": "3-1",
     "difficulty": "medium",
@@ -1933,26 +1765,26 @@ const QUESTIONS = [
   },
   {
     "id": "final-score-1966",
-    "question": "What was the score in the 1966 World Cup Final (England vs Germany)?",
+    "question": "What was the score in the 1966 World Cup Final (England vs West Germany)?",
     "options": [
+      "0-1",
       "4-1",
-      "4-2",
-      "1-0",
-      "0-0"
+      "3-1",
+      "4-2"
     ],
     "answer": "4-2",
     "difficulty": "medium",
     "category": "Finals",
-    "fact": "The 1966 final ended England 4 - 2 Germany."
+    "fact": "The 1966 final ended England 4 - 2 West Germany."
   },
   {
     "id": "final-score-1970",
     "question": "What was the score in the 1970 World Cup Final (Brazil vs Italy)?",
     "options": [
-      "1-1",
-      "3-2",
       "4-1",
-      "0-3"
+      "3-1",
+      "0-3",
+      "4-2"
     ],
     "answer": "4-1",
     "difficulty": "medium",
@@ -1961,26 +1793,26 @@ const QUESTIONS = [
   },
   {
     "id": "final-score-1974",
-    "question": "What was the score in the 1974 World Cup Final (Netherlands vs Germany)?",
+    "question": "What was the score in the 1974 World Cup Final (Netherlands vs West Germany)?",
     "options": [
       "3-1",
       "1-2",
-      "5-2",
-      "3-2"
+      "1-1",
+      "0-1"
     ],
     "answer": "1-2",
     "difficulty": "medium",
     "category": "Finals",
-    "fact": "The 1974 final ended Netherlands 1 - 2 Germany."
+    "fact": "The 1974 final ended Netherlands 1 - 2 West Germany."
   },
   {
     "id": "final-score-1978",
     "question": "What was the score in the 1978 World Cup Final (Argentina vs Netherlands)?",
     "options": [
+      "0-0",
       "3-1",
-      "1-1",
-      "0-2",
-      "0-0"
+      "3-2",
+      "4-1"
     ],
     "answer": "3-1",
     "difficulty": "medium",
@@ -1989,54 +1821,54 @@ const QUESTIONS = [
   },
   {
     "id": "final-score-1982",
-    "question": "What was the score in the 1982 World Cup Final (Italy vs Germany)?",
+    "question": "What was the score in the 1982 World Cup Final (Italy vs West Germany)?",
     "options": [
-      "1-0",
-      "4-2",
-      "1-1",
-      "3-1"
+      "3-1",
+      "4-1",
+      "3-2",
+      "0-0"
     ],
     "answer": "3-1",
     "difficulty": "medium",
     "category": "Finals",
-    "fact": "The 1982 final ended Italy 3 - 1 Germany."
+    "fact": "The 1982 final ended Italy 3 - 1 West Germany."
   },
   {
     "id": "final-score-1986",
-    "question": "What was the score in the 1986 World Cup Final (Argentina vs Germany)?",
+    "question": "What was the score in the 1986 World Cup Final (Argentina vs West Germany)?",
     "options": [
-      "1-0",
-      "0-0",
-      "5-2",
-      "3-2"
+      "3-2",
+      "0-2",
+      "0-1",
+      "0-0"
     ],
     "answer": "3-2",
     "difficulty": "medium",
     "category": "Finals",
-    "fact": "The 1986 final ended Argentina 3 - 2 Germany."
+    "fact": "The 1986 final ended Argentina 3 - 2 West Germany."
   },
   {
     "id": "final-score-1990",
-    "question": "What was the score in the 1990 World Cup Final (Germany vs Argentina)?",
+    "question": "What was the score in the 1990 World Cup Final (West Germany vs Argentina)?",
     "options": [
-      "3-1",
-      "4-1",
       "2-1",
+      "4-1",
+      "0-3",
       "1-0"
     ],
     "answer": "1-0",
     "difficulty": "medium",
     "category": "Finals",
-    "fact": "The 1990 final ended Germany 1 - 0 Argentina."
+    "fact": "The 1990 final ended West Germany 1 - 0 Argentina."
   },
   {
     "id": "final-score-1994",
     "question": "What was the score in the 1994 World Cup Final (Brazil vs Italy)?",
     "options": [
-      "1-1",
       "2-1",
+      "4-2",
       "0-0",
-      "4-1"
+      "1-0"
     ],
     "answer": "0-0",
     "difficulty": "medium",
@@ -2047,9 +1879,9 @@ const QUESTIONS = [
     "id": "final-score-1998",
     "question": "What was the score in the 1998 World Cup Final (Brazil vs France)?",
     "options": [
+      "2-1",
+      "0-2",
       "0-3",
-      "1-1",
-      "4-1",
       "4-2"
     ],
     "answer": "0-3",
@@ -2063,8 +1895,8 @@ const QUESTIONS = [
     "options": [
       "0-2",
       "1-2",
-      "4-2",
-      "0-0"
+      "0-3",
+      "0-1"
     ],
     "answer": "0-2",
     "difficulty": "medium",
@@ -2075,10 +1907,10 @@ const QUESTIONS = [
     "id": "final-score-2006",
     "question": "What was the score in the 2006 World Cup Final (Italy vs France)?",
     "options": [
-      "1-2",
+      "4-2",
       "1-1",
-      "0-2",
-      "3-1"
+      "0-3",
+      "4-1"
     ],
     "answer": "1-1",
     "difficulty": "medium",
@@ -2089,10 +1921,10 @@ const QUESTIONS = [
     "id": "final-score-2010",
     "question": "What was the score in the 2010 World Cup Final (Netherlands vs Spain)?",
     "options": [
-      "0-0",
+      "2-1",
       "0-1",
       "1-1",
-      "4-2"
+      "0-2"
     ],
     "answer": "0-1",
     "difficulty": "medium",
@@ -2103,10 +1935,10 @@ const QUESTIONS = [
     "id": "final-score-2014",
     "question": "What was the score in the 2014 World Cup Final (Germany vs Argentina)?",
     "options": [
-      "1-1",
-      "1-0",
-      "0-1",
-      "5-2"
+      "2-1",
+      "3-1",
+      "4-2",
+      "1-0"
     ],
     "answer": "1-0",
     "difficulty": "medium",
@@ -2114,41 +1946,13 @@ const QUESTIONS = [
     "fact": "The 2014 final ended Germany 1 - 0 Argentina."
   },
   {
-    "id": "final-score-2018",
-    "question": "What was the score in the 2018 World Cup Final (Argentina vs Mexico)?",
-    "options": [
-      "1-0",
-      "0-3",
-      "3-1",
-      "5-2"
-    ],
-    "answer": "1-0",
-    "difficulty": "medium",
-    "category": "Finals",
-    "fact": "The 2018 final ended Argentina 1 - 0 Mexico."
-  },
-  {
-    "id": "final-score-2022",
-    "question": "What was the score in the 2022 World Cup Final (Algeria vs Argentina)?",
-    "options": [
-      "1-2",
-      "4-2",
-      "0-2",
-      "1-0"
-    ],
-    "answer": "1-0",
-    "difficulty": "medium",
-    "category": "Finals",
-    "fact": "The 2022 final ended Algeria 1 - 0 Argentina."
-  },
-  {
     "id": "highest-scoring-1930",
     "question": "Which match had the most goals at the 1930 World Cup?",
     "options": [
-      "Chile vs Mexico",
-      "Yugoslavia vs Brazil",
+      "Argentina vs Mexico",
+      "Brazil vs Bolivia",
       "Uruguay vs Argentina",
-      "Argentina vs Mexico"
+      "Uruguay vs Romania"
     ],
     "answer": "Argentina vs Mexico",
     "difficulty": "hard",
@@ -2159,10 +1963,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1934",
     "question": "Which match had the most goals at the 1934 World Cup?",
     "options": [
-      "Germany vs Belgium",
-      "Czechoslovakia vs Germany",
+      "Hungary vs Egypt",
       "Italy vs USA",
-      "Austria vs France"
+      "Czechoslovakia vs Switzerland",
+      "Sweden vs Argentina"
     ],
     "answer": "Italy vs USA",
     "difficulty": "hard",
@@ -2173,10 +1977,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1938",
     "question": "Which match had the most goals at the 1938 World Cup?",
     "options": [
+      "Hungary vs Sweden",
       "Brazil vs Poland",
-      "Sweden vs Cuba",
-      "Brazil vs Sweden",
-      "Hungary vs Switzerland"
+      "Cuba vs Romania",
+      "Brazil vs Czechoslovakia"
     ],
     "answer": "Brazil vs Poland",
     "difficulty": "hard",
@@ -2187,10 +1991,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1950",
     "question": "Which match had the most goals at the 1950 World Cup?",
     "options": [
-      "Brazil vs Yugoslavia",
-      "Uruguay vs Bolivia",
-      "England vs Chile",
-      "Sweden vs Spain"
+      "Italy vs Paraguay",
+      "Yugoslavia vs Switzerland",
+      "Spain vs England",
+      "Uruguay vs Bolivia"
     ],
     "answer": "Uruguay vs Bolivia",
     "difficulty": "hard",
@@ -2201,10 +2005,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1954",
     "question": "Which match had the most goals at the 1954 World Cup?",
     "options": [
-      "Germany vs Turkey",
-      "Hungary vs Germany",
+      "England vs Belgium",
       "Uruguay vs England",
-      "Austria vs Switzerland"
+      "Austria vs Switzerland",
+      "England vs Switzerland"
     ],
     "answer": "Austria vs Switzerland",
     "difficulty": "hard",
@@ -2215,10 +2019,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1958",
     "question": "Which match had the most goals at the 1958 World Cup?",
     "options": [
+      "Mexico vs Wales",
       "France vs Paraguay",
-      "England vs Austria",
-      "Sweden vs Germany",
-      "France vs Northern Ireland"
+      "West Germany vs Czechoslovakia",
+      "Hungary vs Wales"
     ],
     "answer": "France vs Paraguay",
     "difficulty": "hard",
@@ -2229,10 +2033,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1962",
     "question": "Which match had the most goals at the 1962 World Cup?",
     "options": [
-      "Soviet Union vs Yugoslavia",
-      "Chile vs Italy",
       "Soviet Union vs Colombia",
-      "Chile vs Soviet Union"
+      "Brazil vs Chile",
+      "Chile vs Italy",
+      "Czechoslovakia vs Hungary"
     ],
     "answer": "Soviet Union vs Colombia",
     "difficulty": "hard",
@@ -2243,10 +2047,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1966",
     "question": "Which match had the most goals at the 1966 World Cup?",
     "options": [
-      "Portugal vs Korea DPR",
-      "Germany vs Switzerland",
-      "Korea DPR vs Chile",
-      "England vs Germany"
+      "England vs West Germany",
+      "Spain vs Switzerland",
+      "Hungary vs Bulgaria",
+      "Portugal vs Korea DPR"
     ],
     "answer": "Portugal vs Korea DPR",
     "difficulty": "hard",
@@ -2257,24 +2061,24 @@ const QUESTIONS = [
     "id": "highest-scoring-1970",
     "question": "Which match had the most goals at the 1970 World Cup?",
     "options": [
-      "Belgium vs El Salvador",
-      "Germany vs Bulgaria",
-      "Brazil vs Italy",
-      "Uruguay vs Soviet Union"
+      "Bulgaria vs Morocco",
+      "West Germany vs Bulgaria",
+      "Italy vs Sweden",
+      "Romania vs Czechoslovakia"
     ],
-    "answer": "Germany vs Bulgaria",
+    "answer": "West Germany vs Bulgaria",
     "difficulty": "hard",
     "category": "Match Records",
-    "fact": "Germany vs Bulgaria produced 7 goals — the most in the 1970 tournament."
+    "fact": "West Germany vs Bulgaria produced 7 goals — the most in the 1970 tournament."
   },
   {
     "id": "highest-scoring-1974",
     "question": "Which match had the most goals at the 1974 World Cup?",
     "options": [
-      "Sweden vs Bulgaria",
-      "Australia vs Chile",
+      "Haiti vs Poland",
       "Yugoslavia vs Zaire",
-      "German DR vs Germany"
+      "Argentina vs Brazil",
+      "Poland vs Yugoslavia"
     ],
     "answer": "Yugoslavia vs Zaire",
     "difficulty": "hard",
@@ -2285,23 +2089,23 @@ const QUESTIONS = [
     "id": "highest-scoring-1978",
     "question": "Which match had the most goals at the 1978 World Cup?",
     "options": [
-      "Italy vs Argentina",
-      "Argentina vs Brazil",
-      "Germany vs Mexico",
+      "West Germany vs Mexico",
+      "West Germany vs Netherlands",
+      "Peru vs Scotland",
       "Argentina vs France"
     ],
-    "answer": "Germany vs Mexico",
+    "answer": "West Germany vs Mexico",
     "difficulty": "hard",
     "category": "Match Records",
-    "fact": "Germany vs Mexico produced 6 goals — the most in the 1978 tournament."
+    "fact": "West Germany vs Mexico produced 6 goals — the most in the 1978 tournament."
   },
   {
     "id": "highest-scoring-1982",
     "question": "Which match had the most goals at the 1982 World Cup?",
     "options": [
-      "Chile vs Austria",
-      "France vs Kuwait",
-      "England vs Czechoslovakia",
+      "Italy vs Cameroon",
+      "Yugoslavia vs Northern Ireland",
+      "Honduras vs Yugoslavia",
       "Hungary vs El Salvador"
     ],
     "answer": "Hungary vs El Salvador",
@@ -2313,10 +2117,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1986",
     "question": "Which match had the most goals at the 1986 World Cup?",
     "options": [
-      "Argentina vs Belgium",
       "Denmark vs Uruguay",
-      "England vs Poland",
-      "Germany vs Mexico"
+      "Scotland vs Denmark",
+      "Bulgaria vs Italy",
+      "Spain vs Belgium"
     ],
     "answer": "Denmark vs Uruguay",
     "difficulty": "hard",
@@ -2327,10 +2131,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1990",
     "question": "Which match had the most goals at the 1990 World Cup?",
     "options": [
+      "rn\">Republic of Ireland vs Egypt",
+      "Yugoslavia vs Colombia",
       "USA vs Czechoslovakia",
-      "Argentina vs Soviet Union",
-      "rn\">United Arab Emirates vs Colombia",
-      "Italy vs Austria"
+      "Cameroon vs Soviet Union"
     ],
     "answer": "USA vs Czechoslovakia",
     "difficulty": "hard",
@@ -2341,10 +2145,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1994",
     "question": "Which match had the most goals at the 1994 World Cup?",
     "options": [
+      "Argentina vs Nigeria",
       "Russia vs Cameroon",
-      "Sweden vs Brazil",
-      "Mexico vs rn\">Republic of Ireland",
-      "Nigeria vs Italy"
+      "Sweden vs Russia",
+      "Korea Republic vs Bolivia"
     ],
     "answer": "Russia vs Cameroon",
     "difficulty": "hard",
@@ -2355,10 +2159,10 @@ const QUESTIONS = [
     "id": "highest-scoring-1998",
     "question": "Which match had the most goals at the 1998 World Cup?",
     "options": [
-      "Netherlands vs Mexico",
-      "Nigeria vs Bulgaria",
-      "South Africa vs Saudi Arabia",
-      "Spain vs Bulgaria"
+      "Scotland vs Morocco",
+      "Spain vs Bulgaria",
+      "Belgium vs Korea Republic",
+      "Chile vs Cameroon"
     ],
     "answer": "Spain vs Bulgaria",
     "difficulty": "hard",
@@ -2369,10 +2173,10 @@ const QUESTIONS = [
     "id": "highest-scoring-2002",
     "question": "Which match had the most goals at the 2002 World Cup?",
     "options": [
-      "Costa Rica vs Brazil",
-      "Paraguay vs South Africa",
       "Germany vs Saudi Arabia",
-      "Portugal vs Poland"
+      "Cameroon vs Germany",
+      "Senegal vs Uruguay",
+      "Saudi Arabia vs rn\">Republic of Ireland"
     ],
     "answer": "Germany vs Saudi Arabia",
     "difficulty": "hard",
@@ -2383,10 +2187,10 @@ const QUESTIONS = [
     "id": "highest-scoring-2006",
     "question": "Which match had the most goals at the 2006 World Cup?",
     "options": [
-      "Italy vs Ghana",
-      "Spain vs France",
+      "Sweden vs Paraguay",
       "Germany vs Costa Rica",
-      "Sweden vs England"
+      "Argentina vs Mexico",
+      "Spain vs France"
     ],
     "answer": "Germany vs Costa Rica",
     "difficulty": "hard",
@@ -2397,10 +2201,10 @@ const QUESTIONS = [
     "id": "highest-scoring-2010",
     "question": "Which match had the most goals at the 2010 World Cup?",
     "options": [
+      "Serbia vs Ghana",
+      "Netherlands vs Spain",
       "Portugal vs Korea DPR",
-      "France vs South Africa",
-      "Germany vs Serbia",
-      "England vs Algeria"
+      "Netherlands vs Slovakia"
     ],
     "answer": "Portugal vs Korea DPR",
     "difficulty": "hard",
@@ -2411,10 +2215,10 @@ const QUESTIONS = [
     "id": "highest-scoring-2014",
     "question": "Which match had the most goals at the 2014 World Cup?",
     "options": [
-      "Korea Republic vs Belgium",
+      "Honduras vs Switzerland",
       "Brazil vs Germany",
-      "Argentina vs Switzerland",
-      "Colombia vs Uruguay"
+      "Argentina vs IR Iran",
+      "Australia vs Netherlands"
     ],
     "answer": "Brazil vs Germany",
     "difficulty": "hard",
@@ -2422,41 +2226,13 @@ const QUESTIONS = [
     "fact": "Brazil vs Germany produced 8 goals — the most in the 2014 tournament."
   },
   {
-    "id": "highest-scoring-2018",
-    "question": "Which match had the most goals at the 2018 World Cup?",
-    "options": [
-      "France vs Costa Rica",
-      "Iran vs Italy",
-      "Iran vs Senegal",
-      "USA vs Costa Rica"
-    ],
-    "answer": "Iran vs Italy",
-    "difficulty": "hard",
-    "category": "Match Records",
-    "fact": "Iran vs Italy produced 5 goals — the most in the 2018 tournament."
-  },
-  {
-    "id": "highest-scoring-2022",
-    "question": "Which match had the most goals at the 2022 World Cup?",
-    "options": [
-      "Japan vs Australia",
-      "Croatia vs Denmark",
-      "England vs Switzerland",
-      "Iran vs Argentina"
-    ],
-    "answer": "England vs Switzerland",
-    "difficulty": "hard",
-    "category": "Match Records",
-    "fact": "England vs Switzerland produced 6 goals — the most in the 2022 tournament."
-  },
-  {
     "id": "top-scorer-klose",
     "question": "Which player scored 17 World Cup goals (1930-2014)?",
     "options": [
-      "Oscar MIGUEZ",
-      "Diego MARADONA",
-      "JAIRZINHO",
-      "KLOSE"
+      "Karl-Heinz RUMMENIGGE",
+      "LEONIDAS",
+      "KLOSE",
+      "RONALDO"
     ],
     "answer": "KLOSE",
     "difficulty": "hard",
@@ -2468,9 +2244,9 @@ const QUESTIONS = [
     "question": "Which player scored 16 World Cup goals (1930-2014)?",
     "options": [
       "RONALDO",
-      "Sandor KOCSIS",
-      "LEONIDAS",
-      "Just FONTAINE"
+      "Diego MARADONA",
+      "Oscar MIGUEZ",
+      "PEL� (Edson Arantes do Nascimento)"
     ],
     "answer": "RONALDO",
     "difficulty": "hard",
@@ -2481,10 +2257,10 @@ const QUESTIONS = [
     "id": "top-scorer-gerd-mueller",
     "question": "Which player scored 13 World Cup goals (1930-2014)?",
     "options": [
-      "Diego MARADONA",
-      "ADEMIR",
+      "JAIRZINHO",
       "Gerd MUELLER",
-      "JAIRZINHO"
+      "Guillermo STABILE",
+      "ADEMIR"
     ],
     "answer": "Gerd MUELLER",
     "difficulty": "hard",
@@ -2495,10 +2271,10 @@ const QUESTIONS = [
     "id": "top-scorer-just-fontaine",
     "question": "Which player scored 13 World Cup goals (1930-2014)?",
     "options": [
+      "Diego MARADONA",
+      "LEONIDAS",
       "Just FONTAINE",
-      "Gary LINEKER",
-      "PEL� (Edson Arantes do Nascimento)",
-      "Helmut RAHN"
+      "M�LLER"
     ],
     "answer": "Just FONTAINE",
     "difficulty": "hard",
@@ -2509,10 +2285,10 @@ const QUESTIONS = [
     "id": "top-scorer-pel�-(edson-arantes-do-nascimento)",
     "question": "Which player scored 12 World Cup goals (1930-2014)?",
     "options": [
-      "LEONIDAS",
-      "Oscar MIGUEZ",
-      "Karl-Heinz RUMMENIGGE",
-      "PEL� (Edson Arantes do Nascimento)"
+      "PEL� (Edson Arantes do Nascimento)",
+      "Gerd MUELLER",
+      "ADEMIR",
+      "JAIRZINHO"
     ],
     "answer": "PEL� (Edson Arantes do Nascimento)",
     "difficulty": "hard",
@@ -2523,10 +2299,10 @@ const QUESTIONS = [
     "id": "top-scorer-m�ller",
     "question": "Which player scored 11 World Cup goals (1930-2014)?",
     "options": [
+      "Karl-Heinz RUMMENIGGE",
       "KLOSE",
       "M�LLER",
-      "JAIRZINHO",
-      "RONALDO"
+      "LEONIDAS"
     ],
     "answer": "M�LLER",
     "difficulty": "hard",
@@ -2537,10 +2313,10 @@ const QUESTIONS = [
     "id": "top-scorer-sandor-kocsis",
     "question": "Which player scored 11 World Cup goals (1930-2014)?",
     "options": [
-      "Uwe SEELER",
       "Sandor KOCSIS",
-      "Grzegorz LATO",
-      "Helmut RAHN"
+      "LEONIDAS",
+      "Uwe SEELER",
+      "Gary LINEKER"
     ],
     "answer": "Sandor KOCSIS",
     "difficulty": "hard",
@@ -2551,10 +2327,10 @@ const QUESTIONS = [
     "id": "top-scorer-grzegorz-lato",
     "question": "Which player scored 10 World Cup goals (1930-2014)?",
     "options": [
-      "RONALDO",
-      "Just FONTAINE",
       "Grzegorz LATO",
-      "Karl-Heinz RUMMENIGGE"
+      "Sandor KOCSIS",
+      "Paolo ROSSI",
+      "Diego MARADONA"
     ],
     "answer": "Grzegorz LATO",
     "difficulty": "hard",
@@ -2566,9 +2342,9 @@ const QUESTIONS = [
     "question": "Which player scored 10 World Cup goals (1930-2014)?",
     "options": [
       "Helmut RAHN",
-      "PEL� (Edson Arantes do Nascimento)",
-      "Karl-Heinz RUMMENIGGE",
-      "Gerd MUELLER"
+      "Grzegorz LATO",
+      "RONALDO",
+      "ADEMIR"
     ],
     "answer": "Helmut RAHN",
     "difficulty": "hard",
@@ -2579,10 +2355,10 @@ const QUESTIONS = [
     "id": "top-scorer-jairzinho",
     "question": "Which player scored 9 World Cup goals (1930-2014)?",
     "options": [
+      "VAVA",
+      "Oscar MIGUEZ",
       "JAIRZINHO",
-      "M�LLER",
-      "PEL� (Edson Arantes do Nascimento)",
-      "Sandor KOCSIS"
+      "PEL� (Edson Arantes do Nascimento)"
     ],
     "answer": "JAIRZINHO",
     "difficulty": "hard",
@@ -2594,8 +2370,8 @@ const QUESTIONS = [
     "question": "Which country has won the most FIFA World Cup titles?",
     "options": [
       "Brazil",
-      "Germany",
       "Italy",
+      "West Germany",
       "Argentina"
     ],
     "answer": "Brazil",
@@ -2703,7 +2479,7 @@ const QUESTIONS = [
   },
   {
     "id": "curated-germany-names",
-    "question": "Germany competed under a different name until reunification. What was it?",
+    "question": "What was the official FIFA name for West Germany in tournament records before reunification?",
     "options": [
       "Germany FR",
       "West Germany",
@@ -2713,7 +2489,7 @@ const QUESTIONS = [
     "answer": "Germany FR",
     "difficulty": "hard",
     "category": "Tournament History",
-    "fact": "Germany competed as \"Germany FR\" (Federal Republic) until reunification in 1990."
+    "fact": "West Germany was listed as \"Germany FR\" (Federal Republic) in FIFA records until reunification in 1990. In this dataset they are recorded as \"West Germany\" for historical clarity."
   },
   {
     "id": "curated-2022-winner",
