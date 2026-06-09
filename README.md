@@ -22,7 +22,7 @@ Cleaning script: [`clean_data.py`](clean_data.py)
 | Change | Details |
 |--------|---------|
 | Attendance type fix | Removed dot separators (e.g. `1.045.246` → `1045246`) and converted from string to integer |
-| Team name standardisation | Renamed `Germany FR` → `Germany` across Winner, Runners-Up, Third, and Fourth columns |
+| Team name standardisation | Renamed `Germany FR` → `West Germany` across Winner, Runners-Up, Third, and Fourth columns (preserving the historical distinction from reunified Germany) |
 
 ### WorldCupMatches_clean.csv (852 rows, 22 columns)
 
@@ -31,7 +31,7 @@ Cleaning script: [`clean_data.py`](clean_data.py)
 | Removed null rows | Dropped 3,720 empty/duplicate rows (852 valid matches remain) |
 | Data type fixes | Converted Year, Goals, Attendance, RoundID, MatchID from float to integer |
 | Datetime parsing | Parsed mixed-format date strings (e.g. `13 Jul 1930 - 15:00`, `17 June 1970 - 16:00`) into datetime |
-| Team name standardisation | `Germany FR` → `Germany`, fixed encoding issues (e.g. `rn)">Iran` → `Iran`) |
+| Team name standardisation | `Germany FR` → `West Germany` (preserving historical distinction), fixed encoding issues (e.g. `rn)">Iran` → `Iran`) |
 | Stage normalisation | Consolidated 23 stage labels into 6: `Group Stage`, `Round of 16`, `Quarter-finals`, `Semi-finals`, `Third Place`, `Final` |
 | New column: `Result` | Derived from goals: `Home Win`, `Away Win`, or `Draw` |
 | New column: `Total Goals` | Sum of Home Team Goals + Away Team Goals |

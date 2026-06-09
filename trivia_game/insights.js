@@ -2,7 +2,7 @@ const INSIGHTS = [
   {
     "image": "charts/winners.png",
     "title": "All-Time Winners",
-    "insight": "Brazil leads with 5 World Cup titles, followed by Germany and Italy with 4 each. Argentina joined the 3-title club in 2022."
+    "insight": "Brazil leads with 5 World Cup titles, followed by Germany* and Italy with 4 each. Germany's total combines West Germany (1954, 1974, 1990) and reunified Germany (2014). Argentina joined the 3-title club in 2022."
   },
   {
     "image": "charts/goals_trend.png",

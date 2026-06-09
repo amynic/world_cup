@@ -234,7 +234,7 @@ curated = [
     {
         'id': 'curated-most-titles',
         'question': 'Which country has won the most FIFA World Cup titles?',
-        'options': ['Brazil', 'Germany', 'Italy', 'Argentina'],
+        'options': ['Brazil', 'Italy', 'West Germany', 'Argentina'],
         'answer': 'Brazil',
         'difficulty': 'easy',
         'category': 'All-Time Records',
@@ -305,12 +305,12 @@ curated = [
     },
     {
         'id': 'curated-germany-names',
-        'question': 'Germany competed under a different name until reunification. What was it?',
+        'question': 'What was the official FIFA name for West Germany in tournament records before reunification?',
         'options': ['Germany FR', 'West Germany', 'Deutsche', 'German Republic'],
         'answer': 'Germany FR',
         'difficulty': 'hard',
         'category': 'Tournament History',
-        'fact': 'Germany competed as "Germany FR" (Federal Republic) until reunification in 1990.'
+        'fact': 'West Germany was listed as "Germany FR" (Federal Republic) in FIFA records until reunification in 1990. In this dataset they are recorded as "West Germany" for historical clarity.'
     },
     {
         'id': 'curated-2022-winner',

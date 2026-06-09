@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-out_dir = r'C:\Users\amynic\github\world_cup'
+out_dir = os.path.dirname(os.path.abspath(__file__))
 
 # ============================================================
 # 1. WorldCups.csv
@@ -11,9 +11,9 @@ cups = pd.read_csv(os.path.join(out_dir, 'WorldCups.csv'))
 # Fix Attendance: remove dot separators and convert to int
 cups['Attendance'] = cups['Attendance'].str.replace('.', '', regex=False).astype(int)
 
-# Standardize team names (Germany FR -> Germany)
+# Rename Germany FR to West Germany for historical accuracy
 for col in ['Winner', 'Runners-Up', 'Third', 'Fourth']:
-    cups[col] = cups[col].replace({'Germany FR': 'Germany'})
+    cups[col] = cups[col].replace({'Germany FR': 'West Germany'})
 
 cups.to_csv(os.path.join(out_dir, 'WorldCups_clean.csv'), index=False)
 print('WorldCups_clean.csv saved')
@@ -45,7 +45,7 @@ matches['Datetime'] = pd.to_datetime(matches['Datetime'].str.strip(), format='mi
 
 # Standardize team names
 name_fixes = {
-    'Germany FR': 'Germany',
+    'Germany FR': 'West Germany',
     'rn)">Iran': 'Iran',
 }
 matches['Home Team Name'] = matches['Home Team Name'].replace(name_fixes)
