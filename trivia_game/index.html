@@ -20,6 +20,7 @@
                 <button class="btn btn-all" id="btn-all">Mix It Up!</button>
             </div>
             <p class="question-count" id="question-count"></p>
+            <button class="btn btn-data" id="btn-data-start">📊 Explore the Data</button>
         </div>
 
         <!-- GAME SCREEN -->
@@ -60,7 +61,21 @@
                 <img id="insight-image" alt="Analysis chart" />
                 <p id="insight-text"></p>
             </div>
-            <button class="btn btn-all" id="btn-play-again">Play Again</button>
+            <div class="results-actions">
+                <button class="btn btn-all" id="btn-play-again">Play Again</button>
+                <button class="btn btn-data" id="btn-data-results">📊 Explore the Data</button>
+            </div>
+        </div>
+
+        <!-- DATA ANALYSIS SCREEN -->
+        <div id="data-screen" class="screen hidden">
+            <div class="data-header">
+                <button class="btn-home" id="btn-data-home" title="Back to Home">🏠</button>
+                <h2>📊 World Cup Data Analysis</h2>
+            </div>
+            <p class="data-subtitle">Dive into the numbers behind 92 years of World Cup history</p>
+            <div id="data-charts"></div>
+            <button class="btn btn-all" id="btn-data-back">⚽ Back to Trivia</button>
         </div>
     </div>
 

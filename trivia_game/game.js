@@ -206,6 +206,7 @@ function createStatCard(value, label) {
 function showStart() {
     resultsScreen.classList.add('hidden');
     gameScreen.classList.add('hidden');
+    document.getElementById('data-screen').classList.add('hidden');
     startScreen.classList.remove('hidden');
 }
 
@@ -240,3 +241,56 @@ document.getElementById('btn-all').addEventListener('click', () => startGame('al
 document.getElementById('btn-home').addEventListener('click', showStart);
 document.getElementById('next-btn').addEventListener('click', nextQuestion);
 document.getElementById('btn-play-again').addEventListener('click', showStart);
+
+// Data analysis screen
+function showDataScreen() {
+    startScreen.classList.add('hidden');
+    gameScreen.classList.add('hidden');
+    resultsScreen.classList.add('hidden');
+    dataScreen.classList.remove('hidden');
+    renderDataCharts();
+}
+
+function renderDataCharts() {
+    const container = document.getElementById('data-charts');
+    if (container.children.length > 0) return; // already rendered
+
+    if (typeof INSIGHTS === 'undefined' || INSIGHTS.length === 0) {
+        const msg = document.createElement('p');
+        msg.textContent = 'No data analysis available yet.';
+        container.appendChild(msg);
+        return;
+    }
+
+    INSIGHTS.forEach((insight, index) => {
+        const card = document.createElement('div');
+        card.className = 'data-card';
+
+        const number = document.createElement('span');
+        number.className = 'data-card-number';
+        number.textContent = index + 1;
+
+        const title = document.createElement('h3');
+        title.textContent = insight.title;
+
+        const img = document.createElement('img');
+        img.src = insight.image;
+        img.alt = insight.title;
+        img.loading = 'lazy';
+
+        const text = document.createElement('p');
+        text.textContent = insight.insight;
+
+        card.appendChild(number);
+        card.appendChild(title);
+        card.appendChild(img);
+        card.appendChild(text);
+        container.appendChild(card);
+    });
+}
+
+const dataScreen = document.getElementById('data-screen');
+document.getElementById('btn-data-start').addEventListener('click', showDataScreen);
+document.getElementById('btn-data-results').addEventListener('click', showDataScreen);
+document.getElementById('btn-data-home').addEventListener('click', showStart);
+document.getElementById('btn-data-back').addEventListener('click', showStart);
