@@ -2728,5 +2728,285 @@ const QUESTIONS = [
     "difficulty": "easy",
     "category": "Recent History",
     "fact": "Argentina beat France on penalties in one of the greatest World Cup finals ever played."
+  },
+  {
+    "id": "popculture-trophy-name",
+    "question": "What is the FIFA World Cup trophy officially called?",
+    "options": [
+      "The Golden Globe",
+      "The FIFA World Cup Trophy",
+      "The Jules Rimet Trophy",
+      "The Victory Cup"
+    ],
+    "answer": "The FIFA World Cup Trophy",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "The current trophy has been awarded since 1974. The original Jules Rimet Trophy was permanently given to Brazil in 1970 after their third win."
+  },
+  {
+    "id": "popculture-hand-of-god",
+    "question": "Which player is famous for the 'Hand of God' goal?",
+    "options": [
+      "Pelé",
+      "Diego Maradona",
+      "Zinedine Zidane",
+      "Ronaldo"
+    ],
+    "answer": "Diego Maradona",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "Maradona scored the controversial 'Hand of God' goal against England in the 1986 World Cup quarter-final, using his hand to punch the ball into the net."
+  },
+  {
+    "id": "popculture-zidane-headbutt",
+    "question": "Which player was sent off for headbutting Marco Materazzi in the 2006 World Cup Final?",
+    "options": [
+      "Thierry Henry",
+      "Ronaldinho",
+      "Zinedine Zidane",
+      "David Beckham"
+    ],
+    "answer": "Zinedine Zidane",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "Zidane's headbutt on Materazzi in the 2006 final was his last ever professional act, and it became one of the most iconic moments in football history."
+  },
+  {
+    "id": "popculture-waka-waka",
+    "question": "Who sang the official 2010 World Cup song 'Waka Waka (This Time for Africa)'?",
+    "options": [
+      "Rihanna",
+      "Shakira",
+      "Beyoncé",
+      "Jennifer Lopez"
+    ],
+    "answer": "Shakira",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "Shakira's 'Waka Waka' became the best-selling World Cup song of all time and is still widely associated with the tournament."
+  },
+  {
+    "id": "popculture-vuvuzela",
+    "question": "Which instrument became famously associated with the 2010 World Cup in South Africa?",
+    "options": [
+      "Didgeridoo",
+      "Vuvuzela",
+      "Tambourine",
+      "Air horn"
+    ],
+    "answer": "Vuvuzela",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "The vuvuzela's constant buzzing sound during the 2010 World Cup divided opinion worldwide and even led to TV broadcast complaints."
+  },
+  {
+    "id": "popculture-pele-most-wins",
+    "question": "Which player has won the most FIFA World Cups?",
+    "options": [
+      "Diego Maradona",
+      "Zinedine Zidane",
+      "Pelé",
+      "Ronaldo"
+    ],
+    "answer": "Pelé",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "Pelé is the only player to have won three World Cups — in 1958, 1962, and 1970 — earning him the title of the greatest footballer of all time."
+  },
+  {
+    "id": "popculture-world-cup-frequency",
+    "question": "How often is the FIFA World Cup held?",
+    "options": [
+      "Every year",
+      "Every 2 years",
+      "Every 4 years",
+      "Every 3 years"
+    ],
+    "answer": "Every 4 years",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "The World Cup has been held every four years since 1930, with the exception of 1942 and 1946 due to World War II."
+  },
+  {
+    "id": "popculture-yellow-card",
+    "question": "What colour card does a referee show for a caution in football?",
+    "options": [
+      "Red",
+      "Blue",
+      "Yellow",
+      "Green"
+    ],
+    "answer": "Yellow",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "Yellow and red cards were introduced at the 1970 World Cup after a communication issue between the referee and players in the 1966 tournament."
+  },
+  {
+    "id": "popculture-offside",
+    "question": "In football, what rule is a player breaking if they are closer to the opponent's goal than both the ball and the second-last defender?",
+    "options": [
+      "Handball",
+      "Offside",
+      "Obstruction",
+      "Foul throw"
+    ],
+    "answer": "Offside",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "The offside rule is one of the most debated rules in football and has been a part of the game since the 19th century."
+  },
+  {
+    "id": "popculture-penalty-shootout",
+    "question": "From how many yards (metres) is a penalty kick taken?",
+    "options": [
+      "10 yards",
+      "12 yards",
+      "15 yards",
+      "8 yards"
+    ],
+    "answer": "12 yards",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "The penalty spot is 12 yards (approximately 11 metres) from the goal line. Penalty shootouts were first used at a World Cup in 1982."
+  },
+  {
+    "id": "popculture-var",
+    "question": "What does VAR stand for in modern football?",
+    "options": [
+      "Video Assisted Replay",
+      "Video Assistant Referee",
+      "Virtual Analysis Review",
+      "Visual Aid Referee"
+    ],
+    "answer": "Video Assistant Referee",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "VAR was used for the first time at a FIFA World Cup during the 2018 tournament in Russia."
+  },
+  {
+    "id": "popculture-golden-boot",
+    "question": "What award is given to the top scorer at a FIFA World Cup?",
+    "options": [
+      "Golden Ball",
+      "Golden Boot",
+      "Golden Glove",
+      "Ballon d'Or"
+    ],
+    "answer": "Golden Boot",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "The Golden Boot (originally the Golden Shoe) has been awarded since 1930. The Golden Ball goes to the best overall player."
+  },
+  {
+    "id": "popculture-beckham-red-card",
+    "question": "Which English player was infamously sent off against Argentina at the 1998 World Cup?",
+    "options": [
+      "Paul Gascoigne",
+      "Wayne Rooney",
+      "David Beckham",
+      "Steven Gerrard"
+    ],
+    "answer": "David Beckham",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "Beckham was sent off for kicking out at Diego Simeone, which led to widespread criticism in England but he later redeemed himself as captain."
+  },
+  {
+    "id": "popculture-world-cup-ball",
+    "question": "What is the name of the classic black-and-white football design first used at the 1970 World Cup?",
+    "options": [
+      "Jabulani",
+      "Telstar",
+      "Brazuca",
+      "Tango"
+    ],
+    "answer": "Telstar",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "The Adidas Telstar was designed with black and white panels so it could be seen more easily on black-and-white television broadcasts."
+  },
+  {
+    "id": "popculture-mascot-first",
+    "question": "What was the name of the first-ever official FIFA World Cup mascot, introduced in 1966?",
+    "options": [
+      "Footix",
+      "World Cup Willie",
+      "Naranjito",
+      "Zakumi"
+    ],
+    "answer": "World Cup Willie",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "World Cup Willie was a lion wearing a Union Jack jersey and became the template for all future World Cup mascots."
+  },
+  {
+    "id": "popculture-number-players",
+    "question": "How many players from each team are on the pitch during a standard football match?",
+    "options": [
+      "9",
+      "10",
+      "11",
+      "12"
+    ],
+    "answer": "11",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "Each team fields 11 players including the goalkeeper. The standard squad size for the World Cup was expanded to 26 players in 2022."
+  },
+  {
+    "id": "popculture-match-duration",
+    "question": "How long is a standard football match (excluding extra time)?",
+    "options": [
+      "80 minutes",
+      "90 minutes",
+      "100 minutes",
+      "120 minutes"
+    ],
+    "answer": "90 minutes",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "A standard match consists of two 45-minute halves. Extra time adds two additional 15-minute periods if the match is drawn in knockout rounds."
+  },
+  {
+    "id": "popculture-cup-of-life",
+    "question": "Which singer performed 'The Cup of Life', the official song of the 1998 World Cup?",
+    "options": [
+      "Enrique Iglesias",
+      "Ricky Martin",
+      "Marc Anthony",
+      "Julio Iglesias"
+    ],
+    "answer": "Ricky Martin",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "Ricky Martin's 'The Cup of Life (La Copa de la Vida)' became a global hit and helped launch his crossover career in English-language music."
+  },
+  {
+    "id": "popculture-paul-octopus",
+    "question": "What animal famously 'predicted' World Cup match results during the 2010 tournament?",
+    "options": [
+      "A parrot",
+      "An octopus",
+      "A cat",
+      "A monkey"
+    ],
+    "answer": "An octopus",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "Paul the Octopus, who lived in a German aquarium, correctly predicted the outcomes of all seven of Germany's matches and the final in 2010."
+  },
+  {
+    "id": "popculture-first-world-cup",
+    "question": "In which year was the first-ever FIFA World Cup held?",
+    "options": [
+      "1926",
+      "1928",
+      "1930",
+      "1934"
+    ],
+    "answer": "1930",
+    "difficulty": "easy",
+    "category": "Pop Culture",
+    "fact": "The first World Cup was held in Uruguay in 1930, with only 13 teams participating. Uruguay won the tournament as hosts."
   }
 ];
