@@ -19,8 +19,9 @@ charts = []
 # ============================================================
 # 1. Tournament Winners
 # ============================================================
-winners = cups['Winner'].value_counts()
-fig, ax = plt.subplots(figsize=(8, 4))
+# Combine West Germany + Germany under "Germany*" for the winners chart
+winners = cups['Winner'].replace({'West Germany': 'Germany*', 'Germany': 'Germany*'}).value_counts()
+fig, ax = plt.subplots(figsize=(8, 4.5))
 colors = ['#005A93' if i == 0 else '#c8102e' if i < 3 else '#aab7c4' for i in range(len(winners))]
 winners.plot(kind='barh', ax=ax, color=colors)
 ax.set_xlabel('Titles')
@@ -28,13 +29,15 @@ ax.set_title('FIFA World Cup Winners (1930–2022)', fontweight='bold')
 ax.invert_yaxis()
 for i, v in enumerate(winners.values):
     ax.text(v + 0.05, i, str(v), va='center', fontweight='bold')
+ax.annotate('* Germany includes West Germany (1954, 1974, 1990) and reunified Germany (2014)',
+            xy=(0.0, -0.18), xycoords='axes fraction', fontsize=7, fontstyle='italic', color='#555555')
 plt.tight_layout()
 plt.savefig(os.path.join(out_dir, 'winners.png'), dpi=150)
 plt.close()
 charts.append({
     'image': 'charts/winners.png',
     'title': 'All-Time Winners',
-    'insight': 'Brazil leads with 5 World Cup titles, followed by Italy with 4. West Germany and reunified Germany have won 3 and 1 titles respectively. Argentina joined the 3-title club in 2022.'
+    'insight': 'Brazil leads with 5 World Cup titles, followed by Germany* and Italy with 4 each. Germany\'s total combines West Germany (1954, 1974, 1990) and reunified Germany (2014). Argentina joined the 3-title club in 2022.'
 })
 
 # ============================================================
