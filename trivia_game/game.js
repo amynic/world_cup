@@ -262,13 +262,12 @@ function renderDataCharts() {
         return;
     }
 
-    INSIGHTS.forEach((insight, index) => {
+    // Build all cards into an array so we can control ordering
+    const cards = [];
+
+    INSIGHTS.forEach((insight) => {
         const card = document.createElement('div');
         card.className = 'data-card';
-
-        const number = document.createElement('span');
-        number.className = 'data-card-number';
-        number.textContent = index + 1;
 
         const title = document.createElement('h3');
         title.textContent = insight.title;
@@ -281,21 +280,16 @@ function renderDataCharts() {
         const text = document.createElement('p');
         text.textContent = insight.insight;
 
-        card.appendChild(number);
         card.appendChild(title);
         card.appendChild(img);
         card.appendChild(text);
-        container.appendChild(card);
+        cards.push(card);
     });
 
-    // Host countries table
+    // Host countries table — insert at position 2 (after All-Time Winners)
     if (typeof HOST_COUNTRIES !== 'undefined' && HOST_COUNTRIES.length > 0) {
         const card = document.createElement('div');
         card.className = 'data-card';
-
-        const number = document.createElement('span');
-        number.className = 'data-card-number';
-        number.textContent = INSIGHTS.length + 1;
 
         const title = document.createElement('h3');
         title.textContent = '🏟️ World Cup Host Countries';
@@ -333,12 +327,20 @@ function renderDataCharts() {
         });
         table.appendChild(tbody);
 
-        card.appendChild(number);
         card.appendChild(title);
         card.appendChild(subtitle);
         card.appendChild(table);
-        container.appendChild(card);
+        cards.splice(1, 0, card);
     }
+
+    // Number and append all cards
+    cards.forEach((card, index) => {
+        const number = document.createElement('span');
+        number.className = 'data-card-number';
+        number.textContent = index + 1;
+        card.prepend(number);
+        container.appendChild(card);
+    });
 }
 
 const dataScreen = document.getElementById('data-screen');
