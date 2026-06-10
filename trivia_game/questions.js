@@ -2784,5 +2784,95 @@ const QUESTIONS = [
     "difficulty": "easy",
     "category": "Pop Culture",
     "fact": "The first World Cup was held in Uruguay in 1930, with only 13 teams participating. Uruguay won the tournament as hosts."
+  },
+  {
+    "id": "2026-teams",
+    "question": "How many teams will compete in the 2026 FIFA World Cup?",
+    "options": ["32", "36", "40", "48"],
+    "answer": "48",
+    "difficulty": "easy",
+    "category": "2026 World Cup",
+    "fact": "The 2026 World Cup expands from 32 to 48 teams — the biggest World Cup ever, with 104 matches across 16 venues."
+  },
+  {
+    "id": "2026-hosts",
+    "question": "Which countries are co-hosting the 2026 FIFA World Cup?",
+    "options": ["USA, Mexico & Canada", "USA, Brazil & Argentina", "Spain, Portugal & Morocco", "England, Scotland & Ireland"],
+    "answer": "USA, Mexico & Canada",
+    "difficulty": "easy",
+    "category": "2026 World Cup",
+    "fact": "The 2026 World Cup is the first ever to be hosted by three nations — the USA, Mexico, and Canada."
+  },
+  {
+    "id": "2026-final-venue",
+    "question": "Which stadium will host the 2026 World Cup Final?",
+    "options": ["SoFi Stadium", "AT&T Stadium", "MetLife Stadium", "Estadio Azteca"],
+    "answer": "MetLife Stadium",
+    "difficulty": "medium",
+    "category": "2026 World Cup",
+    "fact": "MetLife Stadium in New York/New Jersey will host the 2026 World Cup Final on 19 July 2026."
+  },
+  {
+    "id": "2026-opening-venue",
+    "question": "Where will the 2026 World Cup opening match be played?",
+    "options": ["MetLife Stadium", "Estadio Azteca", "BC Place", "Hard Rock Stadium"],
+    "answer": "Estadio Azteca",
+    "difficulty": "medium",
+    "category": "2026 World Cup",
+    "fact": "Estadio Azteca in Mexico City hosts the opener — making it the first stadium to host three World Cup opening matches!"
+  },
+  {
+    "id": "2026-debut-nations",
+    "question": "Which of these nations will make their World Cup debut in 2026?",
+    "options": ["Uzbekistan", "Iceland", "Vietnam", "India"],
+    "answer": "Uzbekistan",
+    "difficulty": "hard",
+    "category": "2026 World Cup",
+    "fact": "Four nations debut in 2026: Uzbekistan, Jordan, Cape Verde, and Curaçao — all benefitting from the expanded 48-team format."
+  },
+  {
+    "id": "2026-debut-count",
+    "question": "How many nations are making their first-ever World Cup appearance in 2026?",
+    "options": ["2", "3", "4", "6"],
+    "answer": "4",
+    "difficulty": "hard",
+    "category": "2026 World Cup",
+    "fact": "Uzbekistan, Jordan, Cape Verde, and Curaçao will all make their World Cup debuts in 2026."
+  },
+  {
+    "id": "2026-us-cities",
+    "question": "How many US cities are hosting 2026 World Cup matches?",
+    "options": ["8", "9", "10", "11"],
+    "answer": "11",
+    "difficulty": "hard",
+    "category": "2026 World Cup",
+    "fact": "The USA hosts the lion's share with 11 cities, while Mexico has 3 and Canada has 2 — 16 venues in total."
+  },
+  {
+    "id": "2026-canada-city",
+    "question": "Which Canadian city is NOT hosting 2026 World Cup matches?",
+    "options": ["Toronto", "Vancouver", "Montreal", "Both Toronto and Vancouver are hosting"],
+    "answer": "Montreal",
+    "difficulty": "medium",
+    "category": "2026 World Cup",
+    "fact": "Only Toronto (BMO Field) and Vancouver (BC Place) were selected as Canadian host cities for 2026."
+  },
+  {
+    "id": "2026-mexico-azteca",
+    "question": "The 2026 World Cup will make Estadio Azteca the first stadium to host matches in how many World Cups?",
+    "options": ["2", "3", "4", "5"],
+    "answer": "3",
+    "difficulty": "medium",
+    "category": "2026 World Cup",
+    "fact": "Estadio Azteca previously hosted the 1970 and 1986 World Cups — in 2026 it becomes the first venue to feature in three editions."
+  },
+  {
+    "id": "2026-curacao",
+    "question": "Which Caribbean island nation qualifies for the World Cup for the first time in 2026?",
+    "options": ["Jamaica", "Trinidad & Tobago", "Curaçao", "Haiti"],
+    "answer": "Curaçao",
+    "difficulty": "hard",
+    "category": "2026 World Cup",
+    "fact": "Curaçao, with a population of around 150,000, is one of the smallest nations ever to qualify for a World Cup."
   }
 ];

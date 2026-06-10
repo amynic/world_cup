@@ -206,6 +206,7 @@ function createStatCard(value, label) {
 function showStart() {
     resultsScreen.classList.add('hidden');
     gameScreen.classList.add('hidden');
+    document.getElementById('data-screen').classList.add('hidden');
     startScreen.classList.remove('hidden');
 }
 
@@ -240,3 +241,216 @@ document.getElementById('btn-all').addEventListener('click', () => startGame('al
 document.getElementById('btn-home').addEventListener('click', showStart);
 document.getElementById('next-btn').addEventListener('click', nextQuestion);
 document.getElementById('btn-play-again').addEventListener('click', showStart);
+
+// Data analysis screen
+function showDataScreen() {
+    startScreen.classList.add('hidden');
+    gameScreen.classList.add('hidden');
+    resultsScreen.classList.add('hidden');
+    dataScreen.classList.remove('hidden');
+    renderDataCharts();
+}
+
+function renderDataCharts() {
+    const container = document.getElementById('data-charts');
+    if (container.children.length > 0) return; // already rendered
+
+    if (typeof INSIGHTS === 'undefined' || INSIGHTS.length === 0) {
+        const msg = document.createElement('p');
+        msg.textContent = 'No data analysis available yet.';
+        container.appendChild(msg);
+        return;
+    }
+
+    // Build all cards into an array so we can control ordering
+    const cards = [];
+
+    INSIGHTS.forEach((insight) => {
+        const card = document.createElement('div');
+        card.className = 'data-card';
+
+        const title = document.createElement('h3');
+        title.textContent = insight.title;
+
+        const img = document.createElement('img');
+        img.src = insight.image;
+        img.alt = insight.title;
+        img.loading = 'lazy';
+
+        const text = document.createElement('p');
+        text.textContent = insight.insight;
+
+        card.appendChild(title);
+        card.appendChild(img);
+        card.appendChild(text);
+        cards.push(card);
+    });
+
+    // Host countries table — insert at position 2 (after All-Time Winners)
+    if (typeof HOST_COUNTRIES !== 'undefined' && HOST_COUNTRIES.length > 0) {
+        const card = document.createElement('div');
+        card.className = 'data-card';
+
+        const title = document.createElement('h3');
+        title.textContent = '🏟️ World Cup Host Countries';
+
+        const subtitle = document.createElement('p');
+        subtitle.className = 'host-table-subtitle';
+        const hostWins = HOST_COUNTRIES.filter(h => h.country === h.winner).length;
+        subtitle.textContent = `${HOST_COUNTRIES.length} tournaments across ${new Set(HOST_COUNTRIES.map(h => h.country)).size} countries — hosts won ${hostWins} times!`;
+
+        const table = document.createElement('table');
+        table.className = 'host-table';
+
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+        ['Year', 'Host Country', 'Winner', 'Runner-Up'].forEach(text => {
+            const th = document.createElement('th');
+            th.textContent = text;
+            headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        const tbody = document.createElement('tbody');
+        HOST_COUNTRIES.forEach(entry => {
+            const tr = document.createElement('tr');
+            if (entry.country === entry.winner) {
+                tr.className = 'host-winner';
+            }
+            [entry.year, entry.country, entry.winner, entry.runnerUp].forEach(val => {
+                const td = document.createElement('td');
+                td.textContent = val;
+                tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+        });
+        table.appendChild(tbody);
+
+        card.appendChild(title);
+        card.appendChild(subtitle);
+        card.appendChild(table);
+        cards.splice(1, 0, card);
+    }
+
+    // 2026 World Cup section
+    if (typeof WORLD_CUP_2026 !== 'undefined') {
+        const wc = WORLD_CUP_2026;
+
+        // Key facts card
+        const factsCard = document.createElement('div');
+        factsCard.className = 'data-card wc2026-card';
+
+        const factsTitle = document.createElement('h3');
+        factsTitle.textContent = '🏟️ 2026 World Cup — By the Numbers';
+
+        const statsGrid = document.createElement('div');
+        statsGrid.className = 'wc2026-stats-grid';
+        const statsData = [
+            { value: wc.teams, label: 'Teams' },
+            { value: wc.matches, label: 'Matches' },
+            { value: wc.venues, label: 'Venues' },
+            { value: wc.groups, label: 'Groups' },
+            { value: wc.debutNations.length, label: 'Debut Nations' },
+            { value: '39', label: 'Days' }
+        ];
+        statsData.forEach(s => {
+            const stat = document.createElement('div');
+            stat.className = 'wc2026-stat';
+            const val = document.createElement('span');
+            val.className = 'wc2026-stat-value';
+            val.textContent = s.value;
+            const lab = document.createElement('span');
+            lab.className = 'wc2026-stat-label';
+            lab.textContent = s.label;
+            stat.appendChild(val);
+            stat.appendChild(lab);
+            statsGrid.appendChild(stat);
+        });
+
+        const changesTitle = document.createElement('h4');
+        changesTitle.textContent = "What's New in 2026?";
+        changesTitle.className = 'wc2026-changes-title';
+
+        const changesList = document.createElement('ul');
+        changesList.className = 'wc2026-changes';
+        wc.keyChanges.forEach(change => {
+            const li = document.createElement('li');
+            li.textContent = change;
+            changesList.appendChild(li);
+        });
+
+        const debutTitle = document.createElement('h4');
+        debutTitle.textContent = '🌟 Debut Nations';
+        debutTitle.className = 'wc2026-changes-title';
+
+        const debutList = document.createElement('div');
+        debutList.className = 'wc2026-debut-nations';
+        wc.debutNations.forEach(nation => {
+            const badge = document.createElement('span');
+            badge.className = 'wc2026-debut-badge';
+            badge.textContent = nation;
+            debutList.appendChild(badge);
+        });
+
+        factsCard.appendChild(factsTitle);
+        factsCard.appendChild(statsGrid);
+        factsCard.appendChild(changesTitle);
+        factsCard.appendChild(changesList);
+        factsCard.appendChild(debutTitle);
+        factsCard.appendChild(debutList);
+        cards.push(factsCard);
+
+        // Group draw card
+        const groupCard = document.createElement('div');
+        groupCard.className = 'data-card wc2026-card';
+
+        const groupTitle = document.createElement('h3');
+        groupTitle.textContent = '📋 2026 World Cup Group Draw';
+
+        const groupGrid = document.createElement('div');
+        groupGrid.className = 'wc2026-group-grid';
+        Object.entries(wc.groupDraw).forEach(([letter, teams]) => {
+            const group = document.createElement('div');
+            group.className = 'wc2026-group';
+            const header = document.createElement('div');
+            header.className = 'wc2026-group-header';
+            header.textContent = `Group ${letter}`;
+            group.appendChild(header);
+            teams.forEach(team => {
+                const row = document.createElement('div');
+                row.className = 'wc2026-group-team';
+                if (wc.debutNations.includes(team)) {
+                    row.classList.add('debut');
+                }
+                row.textContent = team;
+                group.appendChild(row);
+            });
+            groupGrid.appendChild(group);
+        });
+
+        const legend = document.createElement('p');
+        legend.className = 'wc2026-legend';
+        legend.textContent = '🌟 = First World Cup appearance';
+
+        groupCard.appendChild(groupTitle);
+        groupCard.appendChild(groupGrid);
+        groupCard.appendChild(legend);
+        cards.push(groupCard);
+    }
+
+    // Number and append all cards
+    cards.forEach((card, index) => {
+        const number = document.createElement('span');
+        number.className = 'data-card-number';
+        number.textContent = index + 1;
+        card.prepend(number);
+        container.appendChild(card);
+    });
+}
+
+const dataScreen = document.getElementById('data-screen');
+document.getElementById('btn-data-start').addEventListener('click', showDataScreen);
+document.getElementById('btn-data-results').addEventListener('click', showDataScreen);
+document.getElementById('btn-data-home').addEventListener('click', showStart);
+document.getElementById('btn-data-back').addEventListener('click', showStart);
