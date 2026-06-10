@@ -287,6 +287,58 @@ function renderDataCharts() {
         card.appendChild(text);
         container.appendChild(card);
     });
+
+    // Host countries table
+    if (typeof HOST_COUNTRIES !== 'undefined' && HOST_COUNTRIES.length > 0) {
+        const card = document.createElement('div');
+        card.className = 'data-card';
+
+        const number = document.createElement('span');
+        number.className = 'data-card-number';
+        number.textContent = INSIGHTS.length + 1;
+
+        const title = document.createElement('h3');
+        title.textContent = '🏟️ World Cup Host Countries';
+
+        const subtitle = document.createElement('p');
+        subtitle.className = 'host-table-subtitle';
+        const hostWins = HOST_COUNTRIES.filter(h => h.country === h.winner).length;
+        subtitle.textContent = `${HOST_COUNTRIES.length} tournaments across ${new Set(HOST_COUNTRIES.map(h => h.country)).size} countries — hosts won ${hostWins} times!`;
+
+        const table = document.createElement('table');
+        table.className = 'host-table';
+
+        const thead = document.createElement('thead');
+        const headerRow = document.createElement('tr');
+        ['Year', 'Host Country', 'Winner'].forEach(text => {
+            const th = document.createElement('th');
+            th.textContent = text;
+            headerRow.appendChild(th);
+        });
+        thead.appendChild(headerRow);
+        table.appendChild(thead);
+
+        const tbody = document.createElement('tbody');
+        HOST_COUNTRIES.forEach(entry => {
+            const tr = document.createElement('tr');
+            if (entry.country === entry.winner) {
+                tr.className = 'host-winner';
+            }
+            [entry.year, entry.country, entry.winner].forEach(val => {
+                const td = document.createElement('td');
+                td.textContent = val;
+                tr.appendChild(td);
+            });
+            tbody.appendChild(tr);
+        });
+        table.appendChild(tbody);
+
+        card.appendChild(number);
+        card.appendChild(title);
+        card.appendChild(subtitle);
+        card.appendChild(table);
+        container.appendChild(card);
+    }
 }
 
 const dataScreen = document.getElementById('data-screen');
