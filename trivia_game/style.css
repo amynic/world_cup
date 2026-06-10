@@ -542,3 +542,126 @@ body {
 #btn-data-back {
     width: 100%;
 }
+
+/* 2026 WORLD CUP SECTION */
+.wc2026-card {
+    border-color: #005A93;
+}
+
+.wc2026-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 16px 0 24px;
+}
+
+.wc2026-stat {
+    background: #e8f0fe;
+    border-radius: 12px;
+    padding: 14px 8px;
+    text-align: center;
+}
+
+.wc2026-stat-value {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #005A93;
+}
+
+.wc2026-stat-label {
+    font-size: 0.8rem;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.wc2026-changes-title {
+    font-size: 1rem;
+    color: #005A93;
+    margin: 16px 0 8px;
+    text-align: left;
+}
+
+.wc2026-changes {
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 16px;
+}
+
+.wc2026-changes li {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.8;
+}
+
+.wc2026-debut-nations {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.wc2026-debut-badge {
+    background: #d4edda;
+    color: #155724;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* GROUP DRAW */
+.wc2026-group-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 16px 0;
+}
+
+.wc2026-group {
+    border: 1px solid #d0dce8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.wc2026-group-header {
+    background: #005A93;
+    color: #fff;
+    padding: 6px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.wc2026-group-team {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #e8eef5;
+    color: #333;
+}
+
+.wc2026-group-team:last-child {
+    border-bottom: none;
+}
+
+.wc2026-group-team.debut {
+    background: #d4edda;
+    font-weight: 600;
+}
+
+.wc2026-group-team.debut::after {
+    content: ' 🌟';
+}
+
+.wc2026-legend {
+    font-size: 0.8rem;
+    color: #555;
+    text-align: center;
+    font-style: italic;
+}
+
+@media (max-width: 480px) {
+    .wc2026-stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .wc2026-group-grid { grid-template-columns: repeat(2, 1fr); }
+}

@@ -333,6 +333,112 @@ function renderDataCharts() {
         cards.splice(1, 0, card);
     }
 
+    // 2026 World Cup section
+    if (typeof WORLD_CUP_2026 !== 'undefined') {
+        const wc = WORLD_CUP_2026;
+
+        // Key facts card
+        const factsCard = document.createElement('div');
+        factsCard.className = 'data-card wc2026-card';
+
+        const factsTitle = document.createElement('h3');
+        factsTitle.textContent = '🏟️ 2026 World Cup — By the Numbers';
+
+        const statsGrid = document.createElement('div');
+        statsGrid.className = 'wc2026-stats-grid';
+        const statsData = [
+            { value: wc.teams, label: 'Teams' },
+            { value: wc.matches, label: 'Matches' },
+            { value: wc.venues, label: 'Venues' },
+            { value: wc.groups, label: 'Groups' },
+            { value: wc.debutNations.length, label: 'Debut Nations' },
+            { value: '39', label: 'Days' }
+        ];
+        statsData.forEach(s => {
+            const stat = document.createElement('div');
+            stat.className = 'wc2026-stat';
+            const val = document.createElement('span');
+            val.className = 'wc2026-stat-value';
+            val.textContent = s.value;
+            const lab = document.createElement('span');
+            lab.className = 'wc2026-stat-label';
+            lab.textContent = s.label;
+            stat.appendChild(val);
+            stat.appendChild(lab);
+            statsGrid.appendChild(stat);
+        });
+
+        const changesTitle = document.createElement('h4');
+        changesTitle.textContent = "What's New in 2026?";
+        changesTitle.className = 'wc2026-changes-title';
+
+        const changesList = document.createElement('ul');
+        changesList.className = 'wc2026-changes';
+        wc.keyChanges.forEach(change => {
+            const li = document.createElement('li');
+            li.textContent = change;
+            changesList.appendChild(li);
+        });
+
+        const debutTitle = document.createElement('h4');
+        debutTitle.textContent = '🌟 Debut Nations';
+        debutTitle.className = 'wc2026-changes-title';
+
+        const debutList = document.createElement('div');
+        debutList.className = 'wc2026-debut-nations';
+        wc.debutNations.forEach(nation => {
+            const badge = document.createElement('span');
+            badge.className = 'wc2026-debut-badge';
+            badge.textContent = nation;
+            debutList.appendChild(badge);
+        });
+
+        factsCard.appendChild(factsTitle);
+        factsCard.appendChild(statsGrid);
+        factsCard.appendChild(changesTitle);
+        factsCard.appendChild(changesList);
+        factsCard.appendChild(debutTitle);
+        factsCard.appendChild(debutList);
+        cards.push(factsCard);
+
+        // Group draw card
+        const groupCard = document.createElement('div');
+        groupCard.className = 'data-card wc2026-card';
+
+        const groupTitle = document.createElement('h3');
+        groupTitle.textContent = '📋 2026 World Cup Group Draw';
+
+        const groupGrid = document.createElement('div');
+        groupGrid.className = 'wc2026-group-grid';
+        Object.entries(wc.groupDraw).forEach(([letter, teams]) => {
+            const group = document.createElement('div');
+            group.className = 'wc2026-group';
+            const header = document.createElement('div');
+            header.className = 'wc2026-group-header';
+            header.textContent = `Group ${letter}`;
+            group.appendChild(header);
+            teams.forEach(team => {
+                const row = document.createElement('div');
+                row.className = 'wc2026-group-team';
+                if (wc.debutNations.includes(team)) {
+                    row.classList.add('debut');
+                }
+                row.textContent = team;
+                group.appendChild(row);
+            });
+            groupGrid.appendChild(group);
+        });
+
+        const legend = document.createElement('p');
+        legend.className = 'wc2026-legend';
+        legend.textContent = '🌟 = First World Cup appearance';
+
+        groupCard.appendChild(groupTitle);
+        groupCard.appendChild(groupGrid);
+        groupCard.appendChild(legend);
+        cards.push(groupCard);
+    }
+
     // Number and append all cards
     cards.forEach((card, index) => {
         const number = document.createElement('span');

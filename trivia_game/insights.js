@@ -55,3 +55,37 @@ const HOST_COUNTRIES = [
   { year: 2018, country: "Russia", winner: "France", runnerUp: "Croatia" },
   { year: 2022, country: "Qatar", winner: "Argentina", runnerUp: "France" }
 ];
+
+const WORLD_CUP_2026 = {
+  dates: "11 June – 19 July 2026",
+  hosts: "USA, Mexico & Canada",
+  teams: 48,
+  matches: 104,
+  venues: 16,
+  groups: 12,
+  debutNations: ["Uzbekistan", "Jordan", "Cape Verde", "Curaçao"],
+  openingMatch: { venue: "Estadio Azteca", city: "Mexico City", teams: "Mexico vs South Africa" },
+  final: { venue: "MetLife Stadium", city: "New York/New Jersey" },
+  groupDraw: {
+    "A": ["Mexico", "South Korea", "South Africa", "Czech Republic"],
+    "B": ["Canada", "Switzerland", "Qatar", "Bosnia & Herzegovina"],
+    "C": ["Brazil", "Morocco", "Scotland", "Haiti"],
+    "D": ["United States", "Australia", "Paraguay", "Türkiye"],
+    "E": ["Germany", "Ecuador", "Ivory Coast", "Curaçao"],
+    "F": ["Netherlands", "Japan", "Tunisia", "Sweden"],
+    "G": ["Belgium", "Iran", "Egypt", "New Zealand"],
+    "H": ["Spain", "Uruguay", "Saudi Arabia", "Cape Verde"],
+    "I": ["France", "Senegal", "Norway", "Iraq"],
+    "J": ["Argentina", "Austria", "Algeria", "Jordan"],
+    "K": ["Portugal", "Colombia", "Uzbekistan", "DR Congo"],
+    "L": ["England", "Croatia", "Panama", "Ghana"]
+  },
+  keyChanges: [
+    "Expanded from 32 to 48 teams",
+    "12 groups of 4 (was 8 groups)",
+    "New Round of 32 knockout stage",
+    "104 matches (was 64)",
+    "39-day tournament (was 32 days)",
+    "First World Cup hosted by 3 countries"
+  ]
+};
