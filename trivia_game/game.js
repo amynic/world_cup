@@ -304,7 +304,7 @@ function renderDataCharts() {
 
         const thead = document.createElement('thead');
         const headerRow = document.createElement('tr');
-        ['Year', 'Host Country', 'Winner'].forEach(text => {
+        ['Year', 'Host Country', 'Winner', 'Runner-Up'].forEach(text => {
             const th = document.createElement('th');
             th.textContent = text;
             headerRow.appendChild(th);
@@ -318,7 +318,7 @@ function renderDataCharts() {
             if (entry.country === entry.winner) {
                 tr.className = 'host-winner';
             }
-            [entry.year, entry.country, entry.winner].forEach(val => {
+            [entry.year, entry.country, entry.winner, entry.runnerUp].forEach(val => {
                 const td = document.createElement('td');
                 td.textContent = val;
                 tr.appendChild(td);
